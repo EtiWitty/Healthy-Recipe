@@ -1,0 +1,26 @@
+{
+  "name": "healthy-recipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EtiWitty/Healthy-Recipe.git"
+  },
+  "author": "Atiyeh Keshavarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EtiWitty/Healthy-Recipe/issues"
+  },
+  "homepage": "https://github.com/EtiWitty/Healthy-Recipe#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  }
+}
