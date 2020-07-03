@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/EtiWitty/Healthy-Recipe/issues"
   },
-  "homepage": "https://github.com/EtiWitty/Healthy-Recipe#readme",
+  "homepage": "https://github.com/EtiWitty/Healthy-Recipe",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
