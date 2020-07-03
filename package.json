@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "react-scripts start",
+    "client-build": "react-scripts build",
     "start": "nodemon server/index.js"
   },
   "repository": {

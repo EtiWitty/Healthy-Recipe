@@ -1,14 +1,16 @@
 import React from 'react';
+import FindRecipe from './FindRecipe';
+import AddRecipe from './AddRecipe';
 
-class MainBoard extends React.Component {
-	constructor(props) {
-	
-	}
-	
+class MainPage extends React.Component {
 	render () {
 		return (
-			<div> Hello World! </div>
-		)
+			<div> 
+				<h1>Hi</h1>
+				<FindRecipe />
+				<AddRecipe />
+			</div>
+		);
 	}
 }
 
