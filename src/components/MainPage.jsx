@@ -3,11 +3,20 @@ import FindRecipe from './FindRecipe';
 import AddRecipe from './AddRecipe';
 
 class MainPage extends React.Component {
-	render () {
+	constructor(props) {
+		super(props);
+
+		this.onSearchCallback = this.onSearchCallback.bind(this);
+	}
+
+	onSearchCallback(category) {
+		console.log(`Search ${category} recipe!`);
+	}
+
+	render() {
 		return (
 			<div> 
-				<h1>Hi</h1>
-				<FindRecipe />
+				<FindRecipe onSearchCallback = {this.onSearchCallback} />
 				<AddRecipe />
 			</div>
 		);
