@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AddRecipe extends React.Component {
+class AddRecipePage extends React.Component {
 	
 	render() {
 	  return (
@@ -11,4 +11,4 @@ class AddRecipe extends React.Component {
 	}
   }
 
-export default AddRecipe;
+export default AddRecipePage;

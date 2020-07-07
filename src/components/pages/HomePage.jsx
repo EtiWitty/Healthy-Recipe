@@ -1,8 +1,8 @@
 import React from 'react';
-import FindRecipe from './FindRecipe';
-import AddRecipe from './AddRecipe';
+import FindRecipePage from './FindRecipePage';
+import AddRecipePage from './AddRecipePage';
 
-class MainPage extends React.Component {
+class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -16,11 +16,11 @@ class MainPage extends React.Component {
 	render() {
 		return (
 			<div> 
-				<FindRecipe onSearchCallback = {this.onSearchCallback} />
-				<AddRecipe />
+				<FindRecipePage onSearchCallback = {this.onSearchCallback} />
+				<AddRecipePage />
 			</div>
 		);
 	}
 }
 
-export default MainPage;
+export default HomePage;

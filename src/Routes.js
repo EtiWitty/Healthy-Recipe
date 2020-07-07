@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import MainPage from './components/MainPage';
-import About from './components/About';
-import Users from './components/Users';
+import HomePage from './components/pages/HomePage';
+import AboutPage from './components/pages/AboutPage';
+import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
+import DetailRecipePage  from './components/pages/DetailRecipePage';
+import AddRecipePage from './components/pages/AddRecipePage';
 
 const Routes = () => {
 	return (
@@ -11,39 +13,35 @@ const Routes = () => {
 				<nav>
 					<ul>
 						<li>
-							<Link to='/'>MainPage</Link>
+							<Link to='/'>Home Page</Link>
 						</li>
 						<li>
-							<Link to='/about'>About</Link>
+							<Link to='/about'>About Page</Link>
 						</li>
 						<li>
-							<Link to='/users'>Users</Link>
+							<Link to='/show-all-recipes'>Show All Recipes Page</Link>
+						</li>
+						<li>
+							<Link to='/add-recipe'>Add Recipe Page </Link>
+						</li>
+						<li>
+							<Link to='/detail-recipe'>Recipe Detail Page</Link>
 						</li>
 					</ul>
 				</nav>
 				{/* <Switch> looks through its children <Route>s and
 			renders the first one that matches the current URL. */}
 				<Switch>
-					<Route path='/about'> <About /> </Route>
-					<Route path='/users'> <Users /> </Route>
-					<Route path='/'> <MainPage /> </Route>
+					<Route path='/about'> <AboutPage /> </Route>
+					<Route path='/show-all-recipes'> <ShowAllRecipesPage /> </Route>
+					<Route path='/'> <HomePage /> </Route>
+					<Route path='/detail-recipe'> <DetailRecipePage /> </Route>
+					<Route path='/add-recipe'> <AddRecipePage /> </Route>
 					{/* <Route component={Error} /> */}
 				</Switch>
 			</div>
 		</Router>
 	);
 }
-
-// function MainPage() {
-// 	return <h2>MainPage</h2>
-// }
-
-// function About() {
-// 	return <h2>About</h2>
-// }
-
-// function Users() {
-// 	return <h2>users</h2>
-// }
 
 export default Routes;
