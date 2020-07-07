@@ -34,9 +34,9 @@ const Routes = () => {
 				<Switch>
 					<Route path='/about'> <AboutPage /> </Route>
 					<Route path='/show-all-recipes'> <ShowAllRecipesPage /> </Route>
-					<Route path='/'> <HomePage /> </Route>
 					<Route path='/detail-recipe'> <DetailRecipePage /> </Route>
 					<Route path='/add-recipe'> <AddRecipePage /> </Route>
+					<Route path='/'> <HomePage /> </Route>
 					{/* <Route component={Error} /> */}
 				</Switch>
 			</div>
