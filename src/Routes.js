@@ -5,6 +5,7 @@ import AboutPage from './components/pages/AboutPage';
 import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
 import DetailRecipePage  from './components/pages/DetailRecipePage';
 import AddRecipePage from './components/pages/AddRecipePage';
+import FindRecipePage from './components/pages/FindRecipePage';
 
 const Routes = () => {
 	return (
@@ -27,6 +28,9 @@ const Routes = () => {
 						<li>
 							<Link to='/detail-recipe'>Recipe Detail Page</Link>
 						</li>
+						<li>
+							<Link to='/find-recipe'>Find Recipes Page</Link>
+						</li>
 					</ul>
 				</nav>
 				{/* <Switch> looks through its children <Route>s and
@@ -36,6 +40,7 @@ const Routes = () => {
 					<Route path='/show-all-recipes'> <ShowAllRecipesPage /> </Route>
 					<Route path='/detail-recipe'> <DetailRecipePage /> </Route>
 					<Route path='/add-recipe'> <AddRecipePage /> </Route>
+					<Route path='/find-recipe'> <FindRecipePage /> </Route>
 					<Route path='/'> <HomePage /> </Route>
 					{/* <Route component={Error} /> */}
 				</Switch>
