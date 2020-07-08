@@ -1,5 +1,7 @@
 import React from 'react';
 import Search from '../Search';
+import HealthyFood from '../../img/HealthyFood.jpeg';
+
 
 class HomePage extends React.Component {
 	constructor(props) {
@@ -14,7 +16,7 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<div> 
+			<div style={{background: `url(${HealthyFood})`}}> 
 				<Search onSearchCallback = {this.onSearchCallback} />
 			</div>
 		);
