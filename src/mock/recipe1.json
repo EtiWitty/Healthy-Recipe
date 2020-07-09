@@ -1,0 +1,10 @@
+{
+	"title": "a good salad",
+	"ingredients": [
+		{ "name": "walnut", "quantity": "1 tbsp" },
+		{ "name": "egg", "quantity": "3" },
+		{ "name": "avocado", "quantity": "1/2" }
+	],
+	"calories": 250,
+	"imgURL": "https://google.com/a.jpg"
+}
