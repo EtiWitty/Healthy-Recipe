@@ -46,7 +46,6 @@ class Recipe2 extends React.Component {
 
 				<h4>The cauliflower rice</h4>
 				<h5>
-					<br></br>
 					1. In the same pan, melt 2 tablespoons of butter. Fry the garlic and onion for 1 minute until fragrant — be careful not to burn.
 					<br></br>
 					2. Add the riced cauliflower to the skillet and stir to mix everything together well and coat in melted butter. Cook, stirring regularly for 1 minute.
