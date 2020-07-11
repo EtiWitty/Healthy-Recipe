@@ -6,7 +6,6 @@ import Recipe3 from '../staticPages/Recipe3';
 import Recipe4 from '../staticPages/Recipe4';
 import Recipe5 from '../staticPages/Recipe5';
 
-
 class ShowAllRecipesPage extends React.Component {
 	
 	render() {

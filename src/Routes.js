@@ -10,7 +10,7 @@ import FindRecipePage from './components/pages/FindRecipePage';
 const Routes = () => {
 	return (
 		<Router>
-			<div>
+			<div className="router-links">
 				<nav>
 					<ul>
 						<li>

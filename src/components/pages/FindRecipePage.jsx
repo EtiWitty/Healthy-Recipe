@@ -1,10 +1,7 @@
 import React from 'react';
 
 class FindRecipePage extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
+	
 	render() {
 	  	return(
 	  		<div>

@@ -3,9 +3,8 @@ import React from 'react';
 class Recipe3 extends React.Component {
 	render () {
 		return (
-			<div>
+			<div className="description">
 				<h3>Chicken Avocado Salad</h3>
-				<br></br>
 				<h4>Ingredients</h4>
 				<h5>
 					2 medium cooked chicken breasts shredded or chopped
