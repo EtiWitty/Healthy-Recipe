@@ -3,7 +3,7 @@ import React from 'react';
 class Recipe5 extends React.Component {
 	render () {
 		return (
-			<div>
+			<div className="description">
 				<h3>Tomato Toast with Macadamia “Ricotta”</h3>
 				<h4>Ingredients</h4>
 				<h5>

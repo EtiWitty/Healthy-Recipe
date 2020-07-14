@@ -11,8 +11,8 @@ class ShowAllRecipesPage extends React.Component {
 	render() {
 		return (
 			<Router>
-				<div>
-					<h3>Show All Recipes</h3>
+				<div className='recipe-detail'>
+					{/* <h3>Show All Recipes</h3> */}
 					<Link to='/recipe1'>Go to Recipe 1</Link>
 					<br></br>
 					<Link to='/recipe2'>Go to Recipe 2</Link>
@@ -23,7 +23,7 @@ class ShowAllRecipesPage extends React.Component {
 					<br></br>
 					<Link to='/recipe5'>Go to Recipe 5</Link>
 
-					<Switch>
+					<Switch >
 						<Route exact path='/Recipe1'> <Recipe1 /> </Route>
 						<Route exact path='/Recipe2'> <Recipe2 /> </Route>
 						<Route exact path='/Recipe3'> <Recipe3 /> </Route>

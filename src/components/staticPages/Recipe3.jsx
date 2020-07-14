@@ -24,10 +24,10 @@ class Recipe3 extends React.Component {
 					salt and pepper to taste
 				</h5>
 				
-				<h2>Instructions</h2>
-				<h3>In a large bowl, add the shredded chicken, avocado, onion, avocados, corn, and cilantro.
+				<h4>Instructions</h4>
+				<h5>In a large bowl, add the shredded chicken, avocado, onion, avocados, corn, and cilantro.
 				Drizzle with the lime juice, olive oil and season with salt and pepper. Toss gently until all the Ingredients are combined.
-				</h3>
+				</h5>
 			</div>
 		)
 	}

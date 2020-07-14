@@ -3,7 +3,7 @@ import React from 'react';
 class Recipe2 extends React.Component {
 	render () {
 		return (
-			<div>
+			<div className="description">
 				<h3>Culiflower Rice with Chicken</h3>
 				<h4>Ingredients</h4>
 				<h5>
@@ -36,7 +36,7 @@ class Recipe2 extends React.Component {
 					1/4 cup fresh parsley, chopped
 				</h5>
 
-				<h4>Instruction</h4>
+				<h2>Instruction</h2>
 				<h5>
 					<br></br>
 					1. To make this parmesan chicken Recipe: In a shallow plate, combine parmesan cheese, grated garlic, paprika, and Italian seasoning. Season the chicken breasts with salt and pepper; dredge in the parmesan mixture; shake off excess and set aside.

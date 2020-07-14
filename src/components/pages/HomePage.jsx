@@ -16,7 +16,7 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<div style={{background: `url(${HealthyFood})`}}> 
+			<div className="back-image" style={{backgroundImage: `url(${HealthyFood})`}}> 
 				<Search onSearchCallback = {this.onSearchCallback} />
 			</div>
 		);

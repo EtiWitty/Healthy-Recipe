@@ -1,15 +1,94 @@
 body {
 	background-color: #fefbd8;
 }
+/* ~~~~~~~~~~~~~Static Pages - Recipe1-2-3-4-5~~~~~~~~~~~~~ */
 
 .description {
 	text-align: left;
 	font-weight: normal;
-	color: #e3eaa7;
+	color: #3d4118;
+	border: 5px solid orange;
+}
+/* ~~~~~~~~~~~~~AboutPage~~~~~~~~~~~~~ */
+.about-page {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border:5px solid rgb(106, 255, 0);
 }
 
-.router-links {
-	color: red;	
-	float: left;
-	width: 50%;
+/* ~~~~~~~~~~~~~Add Recipe Page~~~~~~~~~~~~~ */
+
+.add-recipe-page {
+	border:5px solid rgb(88, 133, 48);
 }
+
+/* ~~~~~~~~~~~~~Detail Recipe Page~~~~~~~~~~~~~ */
+
+.detail-recipe-page {
+	border:5px solid rgb(255, 0, 89);
+}
+
+
+/* ~~~~~~~~~~~~~FindRecipe Page~~~~~~~~~~~~~ */
+
+.find-recipe-page {
+	border:5px solid rgb(0, 217, 255);
+}
+
+/* ~~~~~~~~~~~~~HomePage~~~~~~~~~~~~~ */
+.back-image {
+	background-color: #cccccc;
+	height: 300px; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	border:5px solid yellow;
+	/* responsive image */
+	width: 50%;
+	height: auto;
+	max-width: 100%;
+  	height: auto;
+}
+
+/* ~~~~~~~~~~~~~Show all recipes page~~~~~~~~~~~~~ */
+
+.recipe-detail {
+	margin:50px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	/* flex-wrap: nowrap; */
+	/* flex-flow: row wrap; */
+	/* justify-content: center; */
+	color:  #82b74b;	
+	float: right;
+	width: 50%; 
+	/* width: 100%; looks better but not for " Show all recipes" */
+	border: 5px solid green;
+}
+
+/* ~~~~~~~~~~~~~Routes~~~~~~~~~~~~~ */
+
+.router-links {
+	display: flex;
+	flex-wrap: wrap;
+	color: #405d27;	 
+	text-align: left;
+	border: 5px solid red;
+}
+
+.nav-routes {
+	display: flex;
+	flex-wrap: wrap;
+	border: 5px solid rgb(138, 17, 111) ;
+}
+
+
+
+
+
+
+
+
