@@ -11,24 +11,24 @@ const Routes = () => {
 	return (
 		<Router>
 			<div className="router-links">
-				<nav className="nav-routes">
+				<nav className="nav justify-content-center">
 					<ul>
-						<li>
+						<li className="nav-item">
 							<Link to='/'>Home Page</Link>
 						</li>
-						<li>
+						<li className="nav-item">
 							<Link to='/about'>About Page</Link>
 						</li>
-						<li>
+						<li className="nav-item">
 							<Link to='/show-all-recipes'>Show All Recipes Page</Link>
 						</li>
-						<li>
+						<li className="nav-item">
 							<Link to='/add-recipe'>Add Recipe Page </Link>
 						</li>
-						<li>
+						<li className="nav-item">
 							<Link to='/detail-recipe'>Recipe Detail Page</Link>
 						</li>
-						<li>
+						<li className="nav-item">
 							<Link to='/find-recipe'>Find Recipes Page</Link>
 						</li>
 					</ul>

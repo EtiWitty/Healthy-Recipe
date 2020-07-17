@@ -16,7 +16,7 @@ class Search extends React.Component {
 	render() {
 		return (
 			<div className="search-button">
-				<input type="button" value="search" onClick={this.handleSearch}/>
+				<input className="form-control form-control-lg" type="text" placeholder=".form-control-lg" value="Find your favorite dish" onClick={this.handleSearch}/>
 			</div>
 		)
 	}

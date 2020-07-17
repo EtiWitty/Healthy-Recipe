@@ -51,10 +51,7 @@ body {
 	background-size: cover;
 	border:5px solid yellow;
 	background-image: linear-gradient(to right, red , yellow);
-	/* responsive image */
-	width: 50%;
-	max-width: 100%;
-  	/* height: auto; */
+	width: 100%;
 }
 
 /* ~~~~~~~~~~~~~Show all recipes page~~~~~~~~~~~~~ */
@@ -78,17 +75,14 @@ body {
 /* ~~~~~~~~~~~~~Routes~~~~~~~~~~~~~ */
 
 .router-links {
+	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	color: #405d27;	 
-	text-align: left;
+	color: #799660;	 
+	text-align: center;
 	border: 5px solid red;
 }
 
-.nav-routes {
-	display: flex;
-	border: 5px solid rgb(138, 17, 111) ;
-}
 
 /* ~~~~~~~~~~~~~Tags~~~~~~~~~~~~~ */
 
@@ -101,9 +95,17 @@ li {
   	padding: 10px 8px;
 }
 
+h3 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
 /* ~~~~~~~~~~~~~Search Button~~~~~~~~~~~~~ */
 
 .search-button {
+	padding: 50px;
 	display: inline;
 }
 
