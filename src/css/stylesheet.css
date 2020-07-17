@@ -6,26 +6,30 @@ body {
 .description {
 	text-align: left;
 	font-weight: normal;
+	padding: 20px;
 	color: #3d4118;
 	border: 5px solid orange;
 }
 /* ~~~~~~~~~~~~~AboutPage~~~~~~~~~~~~~ */
 .about-page {
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
+	margin:50px;
+	padding: 20px;
 	border:5px solid rgb(106, 255, 0);
 }
 
 /* ~~~~~~~~~~~~~Add Recipe Page~~~~~~~~~~~~~ */
 
 .add-recipe-page {
+	margin:50px;
+	padding: 20px;
 	border:5px solid rgb(88, 133, 48);
 }
 
 /* ~~~~~~~~~~~~~Detail Recipe Page~~~~~~~~~~~~~ */
 
 .detail-recipe-page {
+	margin:50px;
+	padding: 20px;
 	border:5px solid rgb(255, 0, 89);
 }
 
@@ -33,22 +37,24 @@ body {
 /* ~~~~~~~~~~~~~FindRecipe Page~~~~~~~~~~~~~ */
 
 .find-recipe-page {
+	margin:50px;
+	padding: 20px;
 	border:5px solid rgb(0, 217, 255);
 }
 
 /* ~~~~~~~~~~~~~HomePage~~~~~~~~~~~~~ */
 .back-image {
 	background-color: #cccccc;
-	height: 300px; 
+	height: 600px; 
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
 	border:5px solid yellow;
+	background-image: linear-gradient(to right, red , yellow);
 	/* responsive image */
 	width: 50%;
-	height: auto;
 	max-width: 100%;
-  	height: auto;
+  	/* height: auto; */
 }
 
 /* ~~~~~~~~~~~~~Show all recipes page~~~~~~~~~~~~~ */
@@ -81,14 +87,24 @@ body {
 
 .nav-routes {
 	display: flex;
-	flex-wrap: wrap;
 	border: 5px solid rgb(138, 17, 111) ;
 }
 
+/* ~~~~~~~~~~~~~Tags~~~~~~~~~~~~~ */
 
+a {
+	text-decoration: none;
+}
 
+li {
+	display: inline;
+  	padding: 10px 8px;
+}
 
+/* ~~~~~~~~~~~~~Search Button~~~~~~~~~~~~~ */
 
-
+.search-button {
+	display: inline;
+}
 
 

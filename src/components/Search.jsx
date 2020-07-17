@@ -15,8 +15,7 @@ class Search extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<h2>Search Here</h2>
+			<div className="search-button">
 				<input type="button" value="search" onClick={this.handleSearch}/>
 			</div>
 		)

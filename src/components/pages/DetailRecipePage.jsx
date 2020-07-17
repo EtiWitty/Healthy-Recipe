@@ -8,7 +8,7 @@ class DetailRecipePage extends React.Component {
 
 	render() {
 	  return (
-	  	<div className="detail-recipe-page">
+	  	<div className="detail-recipe-page" >
 			<h2>Here is your rercipe in detail</h2>
 			{/* <h3>THis is recipe #{id}</h3> */}
 		</div>
