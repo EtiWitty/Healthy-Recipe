@@ -4,7 +4,7 @@ class AboutPage extends React.Component {
 	
 	render() {
 	  return (
-	  	<div className="about-page" >
+	  	<div className="about-page internal-page" >
 			<h4>About the Healthy Recipe App</h4>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 			<br></br>

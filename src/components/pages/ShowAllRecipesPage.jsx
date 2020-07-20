@@ -11,7 +11,7 @@ class ShowAllRecipesPage extends React.Component {
 	render() {
 		return (
 			<Router>
-				<div className='recipe-detail'>
+				<div className='recipe-detail internal-page'>
 					{/* <h3>Show All Recipes</h3> */}
 					<Link to='/recipe1'>Go to Recipe 1</Link>
 					<br></br>

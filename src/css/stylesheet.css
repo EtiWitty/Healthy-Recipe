@@ -1,7 +1,14 @@
 body {
 	background-color: #fefbd8;
+        font-family: 'Verdana', 'Tangerine', serif;
+        font-size: 16px;
 }
 /* ~~~~~~~~~~~~~Static Pages - Recipe1-2-3-4-5~~~~~~~~~~~~~ */
+
+.internal-page {
+	margin:50px;
+	padding: 20px;
+}
 
 .description {
 	text-align: left;
@@ -10,26 +17,19 @@ body {
 	color: #3d4118;
 	border: 5px solid orange;
 }
+
 /* ~~~~~~~~~~~~~AboutPage~~~~~~~~~~~~~ */
 .about-page {
-	margin:50px;
-	padding: 20px;
 	border:5px solid rgb(106, 255, 0);
 }
 
 /* ~~~~~~~~~~~~~Add Recipe Page~~~~~~~~~~~~~ */
-
 .add-recipe-page {
-	margin:50px;
-	padding: 20px;
 	border:5px solid rgb(88, 133, 48);
 }
 
 /* ~~~~~~~~~~~~~Detail Recipe Page~~~~~~~~~~~~~ */
-
 .detail-recipe-page {
-	margin:50px;
-	padding: 20px;
 	border:5px solid rgb(255, 0, 89);
 }
 
@@ -37,8 +37,6 @@ body {
 /* ~~~~~~~~~~~~~FindRecipe Page~~~~~~~~~~~~~ */
 
 .find-recipe-page {
-	margin:50px;
-	padding: 20px;
 	border:5px solid rgb(0, 217, 255);
 }
 
@@ -57,19 +55,17 @@ body {
 /* ~~~~~~~~~~~~~Show all recipes page~~~~~~~~~~~~~ */
 
 .recipe-detail {
-	margin:50px;
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	/* flex-wrap: wrap; */
-	/* flex-wrap: nowrap; */
-	/* flex-flow: row wrap; */
-	/* justify-content: center; */
 	color:  #82b74b;	
 	float: right;
 	width: 50%; 
 	/* width: 100%; looks better but not for " Show all recipes" */
 	border: 5px solid green;
+}
+
+.recipe-detail a {
+	color: rgb(55, 174, 134);
 }
 
 /* ~~~~~~~~~~~~~Routes~~~~~~~~~~~~~ */

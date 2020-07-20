@@ -4,7 +4,7 @@ class AddRecipePage extends React.Component {
 	
 	render() {
 	  return (
-	  	<div className="add-recipe-page">
+	  	<div className="add-recipe-page internal-page">
 			<h2>Add your desired recipe</h2>
 		</div>
 	  )
