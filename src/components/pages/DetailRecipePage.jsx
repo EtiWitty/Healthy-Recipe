@@ -1,10 +1,11 @@
 import React from 'react';
+import RecipeTemplate from './RecipeTemplate';
+import data1 from '../../mock/data1.json';
 
 class DetailRecipePage extends React.Component {
-	//TODO:
-	// * Find how to get ID from the URL
-	// https://localhost:3000/DetailRecipePage?id=1 or
-	// https://localhost:3000/DetailRecipePage/1 or so that you user https://stackoverflow.com/a/45599016
+	constructor(props) {
+		super(props);
+	}
 
 	render() {
 		const id = this.props.match.params.id;
@@ -12,8 +13,8 @@ class DetailRecipePage extends React.Component {
 
 	  return (
 	  	<div className="detail-recipe-page" >
-			<h2>Here is your rercipe in detail { id }</h2>
-			{/* <h3>THis is recipe #{id}</h3> */}
+			<h2>Here is your rercipe { id } in detail </h2>
+			<RecipeTemplate recipeData={this.props.recipeData}/>
 		</div>
 	  )
 	  //TODO: use recipe template here and pass "data" to it as a prop

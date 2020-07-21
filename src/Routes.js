@@ -42,7 +42,6 @@ const Routes = () => {
 					<Route  path='/add-recipe' component={AddRecipePage} /> 
 					<Route  path='/find-recipe' component={FindRecipePage} /> 
 					<Route  path='/' component={HomePage} /> 
-					{/* <Route component={Error} /> */}
 				</Switch>
 			</div>
 		</Router>
