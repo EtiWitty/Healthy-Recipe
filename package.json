@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/EtiWitty/Healthy-Recipe",
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",

@@ -1,0 +1,18 @@
+{	
+	"id":2,
+	"title": "Chicken Avocado Toast",
+	"ingredients": [
+		{ "name": "walnut", "quantity": "1 tbsp" },
+		{ "name": "egg", "quantity": "3" },
+		{ "name": "avocado", "quantity": "1/2" },
+		{ "name": "avocado", "quantity": "1/2" },
+		{ "name": "avocado", "quantity": "1/2" },
+		{ "name": "avocado", "quantity": "1/2" }
+	],
+	"calories": 150,
+	"imgURL": "https://google.com/a.jpg",
+	"instruction": "Lorem Ipsum",
+	"tags": [
+		"vegeterian", "less than 300 calories"
+	]
+}

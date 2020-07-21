@@ -36,13 +36,12 @@ const Routes = () => {
 				{/* <Switch> looks through its children <Route>s and
 			renders the first one that matches the current URL. */}
 				<Switch>
-					<Route  path="/about" component={AboutPage} />
-					{/* <Route  path='/about'> <AboutPage /> </Route> */}
+					<Route  path='/about' component={AboutPage} />
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
-					<Route  path='/detail-recipe'component={DetailRecipePage} /> 
-					<Route  path='/add-recipe'component={AddRecipePage} /> 
-					<Route  path='/find-recipe'component={FindRecipePage} /> 
-					<Route  path='/'component={HomePage} /> 
+					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
+					<Route  path='/add-recipe' component={AddRecipePage} /> 
+					<Route  path='/find-recipe' component={FindRecipePage} /> 
+					<Route  path='/' component={HomePage} /> 
 					{/* <Route component={Error} /> */}
 				</Switch>
 			</div>
