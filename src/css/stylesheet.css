@@ -98,6 +98,10 @@ h3 {
 	padding-right: 50px;
 }
 
+table, th, td {
+	border: 1px solid rgb(117, 45, 45);
+  }
+
 /* ~~~~~~~~~~~~~Search Button~~~~~~~~~~~~~ */
 
 .search-button {
