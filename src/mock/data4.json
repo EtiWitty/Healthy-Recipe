@@ -1,0 +1,18 @@
+{
+	"id":4,
+	"title": "Stir Fry and Curry",
+	"ingredients": [
+		{ "name": "Boneless Chicken", "quantity": "2 lb" },
+		{ "name": "Bell Peper", "quantity": " 1 cup" },
+		{ "name": "Diced Onion", "quantity": "1/2 cup" },
+		{ "name": "Broccli", "quantity": "2 cups" },
+		{ "name": "Scallion", "quantity": "1 bunch" },
+		{ "name": "Diced Garlic", "quantity": "1/3 cup" }
+	],
+	"calories": 400,
+	"imgURL": "https://ifoodreal.com/wp-content/uploads/2019/05/healthy-chicken-stir-fry-recipe-6.webp",
+	"instruction": "Lorem Ipsum",
+	"tags": [
+		"Low carb"," ", "less than 500 calories"
+	]
+}

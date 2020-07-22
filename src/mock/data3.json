@@ -1,18 +1,18 @@
 {
 	"id":3,
-	"title": "Avocado Toast",
+	"title": "Ground Turkey Zucchini Skillet",
 	"ingredients": [
-		{ "name": "walnut", "quantity": "1 tbsp" },
-		{ "name": "egg", "quantity": "3" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" }
+		{ "name": "Ground Turkey", "quantity": "2 lb" },
+		{ "name": "Zucchini", "quantity": "1 lb" },
+		{ "name": "Tomato", "quantity": "1 pint" },
+		{ "name": "Pesto", "quantity": "3/4 cup" },
+		{ "name": "Parmesan", "quantity": "3 tbsp" },
+		{ "name": "Diced Onion", "quantity": "1/3 cup" }
 	],
-	"calories": 300,
-	"imgURL": "https://google.com/a.jpg",
+	"calories": 400,
+	"imgURL": "https://ifoodreal.com/wp-content/uploads/2018/07/turkey-zucchini-skillet.jpg",
 	"instruction": "Lorem Ipsum",
 	"tags": [
-		"vegeterian", "less than 300 calories"
+		 "less than 500 calories"
 	]
 }

@@ -1,0 +1,17 @@
+{
+	"id":5,
+	"title": "Healthy Orange Chicken",
+	"ingredients": [
+		{ "name": "Chicken Fillet", "quantity": "2 lb" },
+		{ "name": "Green Beans", "quantity": "1/2 lb" },
+		{ "name": "Soy Sauce", "quantity": "3 tbsp" },
+		{ "name": "Garlic Powder", "quantity": "2 tbsp" },
+		{ "name": "Orange Juice", "quantity": "1 cup" }
+	],
+	"calories": 400,
+	"imgURL": "https://thecleaneatingcouple.com/wp-content/uploads/2017/01/healthy-orange-chicken-8.jpg",
+	"instruction": "Lorem Ipsum",
+	"tags": [
+		 "less than 500 calories"
+	]
+}

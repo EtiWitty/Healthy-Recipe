@@ -2,17 +2,17 @@
 	"id":2,
 	"title": "Chicken Avocado Toast",
 	"ingredients": [
-		{ "name": "walnut", "quantity": "1 tbsp" },
-		{ "name": "egg", "quantity": "3" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" }
+		{ "name": "Edemame Beans", "quantity": "30g" },
+		{ "name": "Cooked Chicken Breast", "quantity": "70g" },
+		{ "name": "Cucumber", "quantity": "70" },
+		{ "name": "Lemon", "quantity": "1/2" },
+		{ "name": "Avocado", "quantity": "50g" },
+		{ "name": "Brown or White Bread", "quantity": "2" }
 	],
-	"calories": 150,
-	"imgURL": "https://google.com/a.jpg",
+	"calories": 250,
+	"imgURL": "https://feed-your-sole.com/wp-content/uploads/2020/01/Avocado-Chicken-Toast-Recipe-800x1040.png",
 	"instruction": "Lorem Ipsum",
 	"tags": [
-		"vegeterian", "less than 300 calories"
+		"Low Carb", " ", "less than 300 calories"
 	]
 }

@@ -3,18 +3,19 @@
 	"id":1,
 	"title": "Greek Salad",
 	"ingredients": [
-		{ "name": "walnut", "quantity": "1 tbsp" },
-		{ "name": "egg", "quantity": "3" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" },
-		{ "name": "avocado", "quantity": "1/2" }
+		{ "name": "Roma Tomato", "quantity": "1" },
+		{ "name": "Cucumbers", "quantity": "1" },
+		{ "name": "Red Onion", "quantity": "1/2 cup" },
+		{ "name": "Bell Peper", "quantity": "1/2 cup" },
+		{ "name": "Avocado", "quantity": "1 cup" },
+		{ "name": "Black Olives", "quantity": "1/2 cup" },
+		{ "name": "Feta Cheese", "quantity": "1/3 Cup" }
 	],
-	"calories": 250,
-	"imgURL": "https://cafedelites.com/wp-content/uploads/2017/04/Chicken-Cucumber-Avocado-Salad-IMAGE-CAFEDELITES-3003.jpg",
-	"instruction": "Lorem Ipsum",
+	"calories": 300,
+	"imgURL": "https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-1-768x1152.jpg",
+	"instruction": "To make this simple salad all you need to do is chop up an assortment of fresh Mediterranean veggies and some olives, add a simple dressing and some feta and you’ll have a delicious salad everyone will love in no time!",
 	"tags": [
-		"vegeterian", "less than 300 calories"
+		"vegeterian"," ", "less than 350 calories"
 	]
 }
 
