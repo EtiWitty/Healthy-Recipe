@@ -6,7 +6,7 @@
   "scripts": {
     "client": "react-scripts start",
     "client-build": "react-scripts build",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/app.js"
   },
   "repository": {
     "type": "git",

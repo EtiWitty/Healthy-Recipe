@@ -6,7 +6,6 @@ class FindRecipePage extends React.Component {
 	  	return(
 	  		<div className="find-recipe-page internal-page">
 				<h2>Find your desired recipe</h2>
-				<br />
 		  	</div>
 		)
 	}
