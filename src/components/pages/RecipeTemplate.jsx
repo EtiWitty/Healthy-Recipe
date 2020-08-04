@@ -33,13 +33,12 @@ class RecipeTemplate extends React.Component {
 						<tr>
 							<th>
 								{ this.state.content.title } 
-								
 							</th>
 						</tr>
 
 						<tr>
 							<td> 
-								<h5>Ingredients</h5>
+								<span>Ingredients</span>
 								<br /> 
 								{ 
 									this.state.content.ingredients.map((ingredient, i) => (
@@ -54,15 +53,21 @@ class RecipeTemplate extends React.Component {
 
 						<tr>
 							<td> 
-								<h5>Calorie</h5> 
-								{ this.state.content.calories }
+								<h5>
+									<span>Instruction:</span>
+								</h5> 
+								<p>
+									<span>
+										{ this.state.content.instruction }
+									</span>
+								</p>
 							</td>
 						</tr>
 
 						<tr>
 							<td> 
-								<h5>Instruction:</h5> 
-								{ this.state.content.instruction }
+								<h5>Calorie</h5> 
+								{ this.state.content.calories }
 							</td>
 						</tr>
 

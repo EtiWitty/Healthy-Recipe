@@ -13,12 +13,10 @@ class DetailRecipePage extends React.Component {
 
 	  return (
 	  	<div className="detail-recipe-page" >
-			<Link to="/show-all-recipes">&lt; Back</Link>
-			{/* <h2>Here is your rercipe { id } in detail </h2> */}
 			<RecipeTemplate id={ id } />
+			<Link to="/show-all-recipes">&lt; More Recipes</Link>
 		</div>
 	  )
-	  //TODO: use recipe template here and pass "data" to it as a prop
 	}
   }
 

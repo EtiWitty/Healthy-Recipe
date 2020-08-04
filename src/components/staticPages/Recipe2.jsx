@@ -6,9 +6,11 @@ class Recipe2 extends React.Component {
 			<div className="description">
 				<h3>Culiflower Rice with Chicken</h3>
 				<h4>Ingredients</h4>
-				<h5>
+				<h5> 
+					{/* todo: ul/ol */}
 					2 large boneless and skinless chicken breasts halved horizontally to make 4
-					<br></br>
+					<br></br> 
+					
 					1/2 cup fresh Parmesan, finely grated
 					<br></br>
 					Salt and fresh cracked black pepper
