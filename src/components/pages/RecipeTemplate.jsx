@@ -24,7 +24,7 @@ class RecipeTemplate extends React.Component {
 		// }
 
 		return (
-			<div>
+			<div className="recipe-template">
 				{ !this.state.content ? (
 					<h2>loading</h2>
 				) : (
@@ -32,30 +32,31 @@ class RecipeTemplate extends React.Component {
 					<tbody>
 						<tr>
 							<th>
-								{ this.state.content.title } 
+								<h3>{ this.state.content.title }</h3> 
 							</th>
 						</tr>
 
 						<tr>
 							<td> 
-								<span>Ingredients</span>
-								<br /> 
+								<img className="recipe-img" src={ this.state.content.imgURL } />
+								<h6>Ingredients</h6>
+								<ul>
 								{ 
 									this.state.content.ingredients.map((ingredient, i) => (
-										<div key={i}>
-											{/* 	<s>{x}</s> <hr /> */}
-											{ingredient.name + "-" + ingredient.quantity} 
-										</div> 
+										<li key={i}>
+											{ingredient.name}: {ingredient.quantity} 
+										</li> 
 									))
 								} 
+								</ul>
 							</td>
 						</tr>
 
 						<tr>
 							<td> 
-								<h5>
+								<h6>
 									<span>Instruction:</span>
-								</h5> 
+								</h6> 
 								<p>
 									<span>
 										{ this.state.content.instruction }
@@ -66,21 +67,15 @@ class RecipeTemplate extends React.Component {
 
 						<tr>
 							<td> 
-								<h5>Calorie</h5> 
-								{ this.state.content.calories }
+								<h6>Calories</h6> 
+								<p>{ this.state.content.calories }</p>
 							</td>
 						</tr>
 
 						<tr>
 							<td> 
-								<h5>Tags</h5> 
-								{ this.state.content.tags }
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<img src={ this.state.content.imgURL } />
+								<h6>Tags</h6> 
+								<p>{ this.state.content.tags }</p>
 							</td>
 						</tr>
 					</tbody>

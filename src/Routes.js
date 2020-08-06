@@ -10,25 +10,25 @@ import FindRecipePage from './components/pages/FindRecipePage';
 const Routes = () => {
 	return (
 		<Router>
-			<div className="router-links">
-				<nav className="nav justify-content-center">
+			<div>
+				<nav className="nav router-links justify-content-center">
 					<ul>
-						<li className="nav-item">
+						<li>
 							<Link to='/'>Home Page</Link>
 						</li>
-						<li className="nav-item">
+						<li>
 							<Link to='/about'>About Page</Link>
 						</li>
-						<li className="nav-item">
+						<li>
 							<Link to='/show-all-recipes'>Show All Recipes Page</Link>
 						</li>
-						<li className="nav-item">
+						<li>
 							<Link to='/add-recipe'>Add Recipe Page </Link>
 						</li>
-						<li className="nav-item">
+						<li>
 							<Link to='/detail-recipe'>Recipe Detail Page</Link>
 						</li>
-						<li className="nav-item">
+						<li>
 							<Link to='/find-recipe'>Find Recipes Page</Link>
 						</li>
 					</ul>

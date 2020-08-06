@@ -1,9 +1,13 @@
 body {
 	background-color: #fefbd8;
-        font-family: 'Verdana', 'Tangerine', serif;
+        font-family: 'Roboto', 'Verdana', 'Tangerine', serif;
         font-size: 16px;
 }
 /* ~~~~~~~~~~~~~Static Pages - Recipe1-2-3-4-5~~~~~~~~~~~~~ */
+.router-links li {
+	display: inline;
+  	padding: 10px 8px;
+}
 
 .internal-page {
 	margin:50px;
@@ -30,9 +34,18 @@ body {
 
 /* ~~~~~~~~~~~~~Detail Recipe Page~~~~~~~~~~~~~ */
 .detail-recipe-page {
-	border:5px solid rgb(255, 0, 89);
+	padding: 20px 50px;
 }
 
+.recipe-template table {
+	width: 100%;
+}
+
+.recipe-template h6 {
+	color: #944;
+	font-weight: bold;
+	/* text-decoration: underline; */
+}
 
 /* ~~~~~~~~~~~~~FindRecipe Page~~~~~~~~~~~~~ */
 
@@ -57,7 +70,7 @@ body {
 .recipe-detail {
 	display: flex;
 	flex-direction: column;
-	color:  #82b74b;	
+	/* color:  #82b74b;	 */
 	float: right;
 	width: 50%; 
 	/* width: 100%; looks better but not for " Show all recipes" */
@@ -68,15 +81,22 @@ body {
 	color: rgb(55, 174, 134);
 }
 
+.recipe-img {
+	width: 150px;
+	float: right;
+	margin: 20px 50px;
+	border: 1px solid #666;
+}
+
 /* ~~~~~~~~~~~~~Routes~~~~~~~~~~~~~ */
 
 .router-links {
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	color: #e9e94a;	 
-	text-align: center;
-	border: 5px solid red;
+	/* color: #e9e94a;	  */
+	/* text-align: center; */
+	/* border: 5px solid red; */
 }
 
 
@@ -86,20 +106,9 @@ a {
 	text-decoration: none;
 }
 
-li {
-	display: inline;
-  	padding: 10px 8px;
-}
-
-h3 {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
 
 table, th, td {
-	border: 1px solid rgb(62, 93, 228);
+	/* border: 1px solid rgb(62, 93, 228); */
   }
 
 /* ~~~~~~~~~~~~~Search Button~~~~~~~~~~~~~ */
