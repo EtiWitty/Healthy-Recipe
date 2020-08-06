@@ -1,51 +1,20 @@
-//TODO: Write an end point which get recipe with id from req.query, and return the json data
 
-import axios from 'axios';
+const Recipe = require('../models/recipesModel');
 
-const Recipes = require('../models/recipesModel');
+// check if the program reach to this page
+console.log('hi');
 
-// Make a request for a user with a given ID
-axios.get('/detail-recipe/:id')
-	.then((response) => {
-		//handle success
-		console.log(response);
-	})
-	.catch((error) => {
-		//handle error
-		console.log(error)
-	})
-	.finally(() => {
-	// always executed 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GET ALL RECEPIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+const testController = (req, res) => {
+	// res.status(200);
+	res.send('Sanity check');
+	  
+}
 
-	});
+const test2Controller = (req, res) => {
+	let x = req.params.id;
+	res.send('salam back'+ "" + x * x);
+}
+	
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TEST~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-app.get('/test1', (req, res) => {
-  res.status(200).send('hiiii');
-});
-
-app.get('/testtime', (req, res) => {
-  db.getTime((err, data) => {
-    if (err) {
-      res.status(500);
-      res.send(err);
-    } else {
-      res.status(200);
-      res.send(data);
-    }
-  });
-});	
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-app.get('/detail-recipe/:id', (req, res) => {
-	db.getListing(req.params.id, (err, data) => {
-	  if (err) {
-		res.status(500);
-		res.send(err);
-	  } else {
-		res.status(200);
-		res.send(data);
-	  }
-	});
-  });
+module.exports = { testController , test2Controller}

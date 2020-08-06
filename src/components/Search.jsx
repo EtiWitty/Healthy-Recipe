@@ -3,6 +3,7 @@ import React from 'react';
 class Search extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {value: ''};
 	
 		this.handleSearch = this.handleSearch.bind(this);
 	}
@@ -16,7 +17,14 @@ class Search extends React.Component {
 	render() {
 		return (
 			<div className="search-button">
-				<input className="form-control form-control-lg" type="text" placeholder=".form-control-lg" value="Find your favorite dish" onClick={this.handleSearch}/>
+				<form>
+					<label>
+						<input 
+							type="text"  
+							value="Find your favorite dish" 
+							onClick={this.handleSearch}/>
+					</label>
+				</form>
 			</div>
 		)
 	}
