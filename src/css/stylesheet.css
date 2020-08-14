@@ -55,12 +55,12 @@ body {
 
 /* ~~~~~~~~~~~~~HomePage~~~~~~~~~~~~~ */
 .back-image {
+
 	background-color: #cccccc;
 	height: 600px; 
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
-	border:5px solid yellow;
 	background-image: linear-gradient(to right, red , yellow);
 	width: 100%;
 }
@@ -112,10 +112,16 @@ table, th, td {
   }
 
 /* ~~~~~~~~~~~~~Search Button~~~~~~~~~~~~~ */
+.btn {
+	display: inline-block;
+	border: none;
+	background: 7px 20px;
+	color: #fff;
+	padding: 7px 20px;
+	cursor: pointer;
+  }
 
-.search-button {
-	padding: 50px;
-	display: inline;
-}
-
-
+  .btn:hover {
+	background: #666;
+  
+  }
