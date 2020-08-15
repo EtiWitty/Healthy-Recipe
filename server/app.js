@@ -9,7 +9,7 @@ dotenv.config()
 //===============================DB Connection============================================
 mongoose.connect(
   process.env.MONGO_URI,
-  {useNewUrlParser: true}
+  {useUnifiedTopology: true, useNewUrlParser: true}
 )
 .then(() => console.log('DB Connected'))
  
@@ -20,17 +20,21 @@ mongoose.connection.on('error', err => {
 //===============================GET Request================================================
 //TODO: Write an end point which get recipe with id from req.query, and return the json data
 
-app.get('/test',controllers.testController);
-app.get('/test/:id',controllers.test2Controller);
+app.get('/api/getSingleRecipe/:id', controllers.getSingleRecipeController);
+app.get('/api/getAllRecipeNames',   controllers.getAllRecipeNames);
 
-
+//===============================Test=======================================================
+app.get('/api/test', controllers.testController);
+// app.get('/hi', function (req, res) {
+//   res.send('Hello World!')
+// })
 
 //=============================================================================================
-const PORT = process.env.PORT || 3030;
+const port = process.env.PORT || 3030;
 
-app.listen  (PORT, () => {
-	console.log('Server is listening on port:', PORT)
-});
+app.listen  (port, () => 
+	console.log(`Server is listening on port ${port}...`)
+);
 
 
 

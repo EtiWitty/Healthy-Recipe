@@ -1,6 +1,8 @@
 import React from 'react';
 import Search from '../Search';
 import food from '../../img/food.jpeg';
+import axios from 'axios';
+import DetailRecipePage from './DetailRecipePage';
 
 
 class HomePage extends React.Component {
@@ -8,6 +10,15 @@ class HomePage extends React.Component {
 		super(props);
 
 	}
+
+	//Find Recipe by name
+	// findRecipe = (name) => {
+	// 	axios.get(`http://localhost:8000/detail-recipe/${recipeSchema.name}`)
+	// 		.then(res => this.setState({
+	// 			recipe: res.data
+	// 		}));
+	// }
+
 
 	render() {
 		return (
