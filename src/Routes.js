@@ -11,28 +11,18 @@ const Routes = () => {
 	return (
 		<Router>
 			<div>
-				<nav className="nav router-links justify-content-center">
-					<ul>
-						<li>
+				<div className="dropdown">
+					<button className="dropbtn">Healthy Recipes</button>
+						<div className="dropdown-content">
 							<Link to='/'>Home Page</Link>
-						</li>
-						<li>
 							<Link to='/about'>About Page</Link>
-						</li>
-						<li>
 							<Link to='/show-all-recipes'>Show All Recipes Page</Link>
-						</li>
-						<li>
-							<Link to='/add-recipe'>Add Recipe Page </Link>
-						</li>
-						<li>
+							<Link to='/add-recipe'>Add Recipe Page</Link>
 							<Link to='/detail-recipe'>Recipe Detail Page</Link>
-						</li>
-						<li>
 							<Link to='/find-recipe'>Find Recipes Page</Link>
-						</li>
-					</ul>
-				</nav>
+						</div>
+				</div>
+
 				{/* <Switch> looks through its children <Route>s and
 			renders the first one that matches the current URL. */}
 				<Switch>
