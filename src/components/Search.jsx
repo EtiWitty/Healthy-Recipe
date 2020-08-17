@@ -16,6 +16,7 @@ export class Search extends React.Component {
 	});
 
 	onSubmit = (e) => {
+		debugger;
 		e.preventDefault();
 		this.props.SearchRecipe(this.state.title)
 		this.setState({
@@ -33,10 +34,9 @@ export class Search extends React.Component {
 						style={{ flex: '10', padding: '5px' }}
 						value={this.props.title}
 						onChange={this.onChange}
+						onSubmit={this.onSubmit}
 					/>
-
 					<input 
-						className="btn"
 						type="submit"
 						value="Submit"
 					/>
