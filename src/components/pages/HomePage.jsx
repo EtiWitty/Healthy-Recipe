@@ -1,18 +1,16 @@
 import React from 'react';
 import Search from '../Search';
-import food from '../../img/food.jpeg';
+import homeImg from '../../img/homeImg.jpg';
 
 
 class HomePage extends React.Component {
 	render() {
 		return (
-			<div className="back-image" style={{backgroundImage: `url(${food})`}}> 
-				<h3>Welcome to my recepies world!</h3>
+			<div className="back-image" style={{backgroundImage: `url(${homeImg})`}}> 
 				<Search searchRecipe = {this.searchRecipe}/>
 			</div>
 		);
 	}
 }
-
 
 export default HomePage;

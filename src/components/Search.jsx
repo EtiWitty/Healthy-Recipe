@@ -27,16 +27,17 @@ export class Search extends React.Component {
 	render() {
 		return (
 			<div>
-				<form>
+				<form className="search-form">
 					<input 
+						className="search-bar"
 						type="text"  
 						placeholder="Search Your Dish..." 
-						style={{ flex: '10', padding: '5px' }}
 						value={this.props.title}
 						onChange={this.onChange}
 						onSubmit={this.onSubmit}
 					/>
-					<input 
+					<input
+						className="submit-btn" 
 						type="submit"
 						value="Submit"
 					/>
