@@ -4,7 +4,7 @@ import HomePage from './components/pages/HomePage';
 import AboutPage from './components/pages/AboutPage';
 import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
 import DetailRecipePage  from './components/pages/DetailRecipePage';
-import AddRecipePage from './components/pages/AddRecipePage';
+import MindfulChoice from './components/pages/MindfulChoice';
 import FindRecipePage from './components/pages/FindRecipePage';
 
 const Routes = () => {
@@ -14,12 +14,12 @@ const Routes = () => {
 				<div className="dropdown">
 					<button className="dropbtn">Healthy Recipes</button>
 						<div className="dropdown-content">
-							<Link to='/'>Home Page</Link>
-							<Link to='/about'>About Page</Link>
-							<Link to='/show-all-recipes'>Show All Recipes Page</Link>
-							<Link to='/add-recipe'>Add Recipe Page</Link>
-							<Link to='/detail-recipe'>Recipe Detail Page</Link>
-							<Link to='/find-recipe'>Find Recipes Page</Link>
+							<Link to='/'>Home</Link>
+							<Link to='/about'>About</Link>
+							<Link to='/show-all-recipes'>All Recipes</Link>
+							<Link to='/mindful-choice'>	Mindful Choice </Link>
+							<Link to='/detail-recipe'>Recipe Detail</Link>
+							<Link to='/find-recipe'>Find Recipes</Link>
 						</div>
 				</div>
 
@@ -29,7 +29,7 @@ const Routes = () => {
 					<Route  path='/about' component={AboutPage} />
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
-					<Route  path='/add-recipe' component={AddRecipePage} /> 
+					<Route  path='/mindful-choice' component={MindfulChoice} /> 
 					<Route  path='/find-recipe' component={FindRecipePage} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>

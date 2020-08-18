@@ -28,8 +28,8 @@ body {
 	border:5px solid rgb(106, 255, 0);
 }
 
-/* ~~~~~~~~~~~~~Add Recipe Page~~~~~~~~~~~~~ */
-.add-recipe-page {
+/* ~~~~~~~~~~~~~Mindful Choice Page~~~~~~~~~~~~~ */
+.mindful-choice-page {
 	border:5px solid rgb(88, 133, 48);
 }
 
@@ -114,9 +114,6 @@ body {
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	/* color: #e9e94a;	  */
-	/* text-align: center; */
-	/* border: 5px solid red; */
 }
 /* ~~~~~~~~~~~~ NavBar ~~~~~~~~~~~~~ */
 /* Style The Dropdown Button */
@@ -190,4 +187,15 @@ table, th, td {
   .btn:hover {
 	background: #666;
   
+  }
+
+  /* ~~~~~~~~~~~~~More-Recipes Button~~~~~~~~~~~~~ */
+  .more-recipes-btn {
+	display: inline-block;
+	color: rgb(128, 240, 97);
+	cursor: pointer;
+	padding: 10px;
+	text-align: center;
+    box-sizing: border-box;
+	border-radius: 10px;
   }
