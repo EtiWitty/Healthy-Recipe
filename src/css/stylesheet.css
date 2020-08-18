@@ -10,8 +10,9 @@ body {
 }
 
 .internal-page {
-	margin:50px;
+	margin:250px;
 	padding: 20px;
+	box-sizing: border-box;
 }
 
 .description {
