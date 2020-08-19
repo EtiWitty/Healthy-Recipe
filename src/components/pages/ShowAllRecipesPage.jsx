@@ -1,12 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import allRecipes from '../../img/allRecipes.jpg';
+import axios from 'axios';
+
 
 
 class ShowAllRecipesPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			recipe: {}
+		};
+	}
 	
+//=============================Get All Recipes==================================
+componentDidMount() {
+	axios.get('http://localhost:8000/api/getAllRecipeNames')
+		.then((res) => {
+			this.setState({recipe: res.data});
+			console.log({ res });
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+}
+
 	render() {
-		
 		return (
 			// <div className='recipe-detail internal-page'>
 			<div className="back-image" style={{backgroundImage: `url(${allRecipes})`}}> 

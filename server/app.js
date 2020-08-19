@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+var cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const controllers = require('../controllers/recipesController');
+
 
 dotenv.config()
  
@@ -19,6 +21,7 @@ mongoose.connection.on('error', err => {
 });
 
 //===============================Middleware================================================
+app.use(cors());
 app.use(bodyParser.json());
 
 //===============================GET Request================================================

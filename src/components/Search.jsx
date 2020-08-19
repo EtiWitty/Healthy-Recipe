@@ -1,15 +1,16 @@
 import React from 'react';
 
+
 export class Search extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			title: ''
-		};
-	
+			title: '',
+	};
 		this.onChange = this.onChange.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
 	}
+
 
 	onChange = (e) => this.setState({
 		 value: e.target.value
