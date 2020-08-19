@@ -1,18 +1,43 @@
 import React from 'react';
+import axios from 'axios';
+
 
 class RecipeTemplate extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			content: {}
+		};
 		// TODO: axios.get("backend/getRecipeData", { id: this.props.id })
-		import(`../../mock/data${this.props.id}.json`)
+		// import(`../../mock/data${this.props.id}.json`)
+		// 	.then((jsonData) => {
+		// 		this.setState({
+		// 			...this.state,
+		// 			content: jsonData
+		// 		});
+		// 	});
+
+		axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`)
 			.then((jsonData) => {
 				this.setState({
-					...this.state,
-					content: jsonData
+					content: jsonData.data
 				});
+				console.log({jsonData});
 			});
+
 	}
+	
+	// componentDidMount() {
+	// 	const id = this.props.match.params.id;
+	// 	axios.get(`http://localhost:8000/api/getSingleRecipe/${id}`)
+	// 		.then((res) => {
+	// 			this.setState({ recipeModel: res.data });
+	// 			console.log({ res });
+	// 		})
+	// 		.catch((error) => {
+	// 			console.log(error);
+	// 		});
+	// }
 
 	render () {
 		// let ingredient = JSON.stringify(data1.ingredients);
@@ -25,7 +50,8 @@ class RecipeTemplate extends React.Component {
 
 		return (
 			<div className="recipe-template">
-				{ !this.state.content ? (
+				{/* if content doesnt exists( in the begining) || the object is empty */}
+				{ !this.state.content || Object.keys(this.state.content).length === 0 ? (
 					<h2>loading</h2>
 				) : (
 					<table key={ this.state.content.id }>

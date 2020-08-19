@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import allRecipes from '../../img/allRecipes.jpg';
 import axios from 'axios';
 
-
-
 class ShowAllRecipesPage extends React.Component {
 	constructor(props) {
 		super(props);

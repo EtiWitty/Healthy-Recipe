@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-var cors = require('cors');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const controllers = require('../controllers/recipesController');
-
 
 dotenv.config()
  
@@ -42,7 +41,5 @@ const port = process.env.PORT || 3030;
 app.listen  (port, () => 
 	console.log(`Server is listening on port ${port}...`)
 );
-
-
 
 module.exports = app;

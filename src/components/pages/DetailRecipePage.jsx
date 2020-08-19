@@ -1,12 +1,9 @@
 import React from 'react';
 import RecipeTemplate from './RecipeTemplate';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class DetailRecipePage extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		const id = this.props.match.params.id;
 		// console.log({ gholi: this.props });
