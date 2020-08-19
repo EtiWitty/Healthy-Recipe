@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const controllers = require('../controllers/recipesController');
 
@@ -17,11 +18,14 @@ mongoose.connection.on('error', err => {
   console.log(`DB connection error: ${err.message}`)
 });
 
+//===============================Middleware================================================
+app.use(bodyParser.json());
+
 //===============================GET Request================================================
 //TODO: Write an end point which get recipe with id from req.query, and return the json data
-
 app.get('/api/getSingleRecipe/:id', controllers.getSingleRecipeController);
 app.get('/api/getAllRecipeNames',   controllers.getAllRecipeNames);
+app.post('/api/searchRecipe', controllers.searchRecipeController);
 
 //===============================Test=======================================================
 app.get('/api/test', controllers.testController);

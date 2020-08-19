@@ -2,7 +2,6 @@
 const mongoose = require('mongoose');
 
 const recipeSchema = new mongoose.Schema({
-	_id: mongoose.Schema.ObjectId,
 	name: {
 		type: String,
 		// any space in the beginning or end will be trimmed
