@@ -17,28 +17,16 @@ class RecipeTemplate extends React.Component {
 		// 		});
 		// 	});
 
-		axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`)
-			.then((jsonData) => {
-				this.setState({
-					content: jsonData.data
-				});
-				console.log({jsonData});
-			});
-
+	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`)
+		.then((jsonData) => {
+			this.setState({ content: jsonData.data});
+			console.log({jsonData});
+		})
+		.catch((error) => {
+			console.log(error);
+		});
 	}
 	
-	// componentDidMount() {
-	// 	const id = this.props.match.params.id;
-	// 	axios.get(`http://localhost:8000/api/getSingleRecipe/${id}`)
-	// 		.then((res) => {
-	// 			this.setState({ recipeModel: res.data });
-	// 			console.log({ res });
-	// 		})
-	// 		.catch((error) => {
-	// 			console.log(error);
-	// 		});
-	// }
-
 	render () {
 		// let ingredient = JSON.stringify(data1.ingredients);
 		// let s = '';
