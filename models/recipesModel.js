@@ -9,22 +9,20 @@ const recipeSchema = new mongoose.Schema({
 		required: true,
 		maxLength: 32
 	},
-	ingredients: {
-		type: Array,
-		required: true,
-		detail: [{ 
-			name: {
-				type: String,
-				trim: true, 
-				required: true,
-			},
-			quantity: {
-			  type: Number, 
-			  trim: true, 
-			  required: true,
-			}
-		}]
-	},
+	//ingredients.detail[0] ingredients.detail[1] ??
+
+	ingredients: [{ 
+		name: {
+			type: String,
+			trim: true, 
+			required: true,
+		},
+		quantity: {
+			type: Number, 
+			trim: true, 
+			required: true,
+		}
+	}],
 	calories: {
 		type: Number,
 		required: true,

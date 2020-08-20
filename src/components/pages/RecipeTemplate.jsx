@@ -16,11 +16,11 @@ class RecipeTemplate extends React.Component {
 		// 			content: jsonData
 		// 		});
 		// 	});
-
-	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`)
-		.then((jsonData) => {
-			this.setState({ content: jsonData.data});
-			console.log({jsonData});
+	//=======================GET SINGLE RECIPE===================================================
+	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`) // this.props.id??
+		.then((res) => {
+			this.setState({ content: res.data});
+			console.log({ res });
 		})
 		.catch((error) => {
 			console.log(error);
@@ -57,7 +57,10 @@ class RecipeTemplate extends React.Component {
 								<ul>
 								{ 
 									this.state.content.ingredients.map((ingredient, i) => (
+										//how so, content has ingredients property?
+										// content is "http://localhost:8000/api/getSingleRecipe/${this.props.id}" ?
 										<li key={i}>
+										{/* problem is here */}
 											{ingredient.name}: {ingredient.quantity} 
 										</li> 
 									))
