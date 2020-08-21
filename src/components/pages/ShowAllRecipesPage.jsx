@@ -7,7 +7,7 @@ class ShowAllRecipesPage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			recipe: {}
+			recipesList: []
 		};
 	}
 	
@@ -15,7 +15,7 @@ class ShowAllRecipesPage extends React.Component {
 componentDidMount() {
 	axios.get('http://localhost:8000/api/getAllRecipeNames')
 		.then((res) => {
-			this.setState({recipe: res.data});
+			this.setState({recipesList: res.data});
 			console.log({ res });
 		})
 		.catch((error) => {
@@ -27,18 +27,27 @@ componentDidMount() {
 		return (
 			// <div className='recipe-detail internal-page'>
 			<div className="back-image" style={{backgroundImage: `url(${allRecipes})`}}> 
-				<Link to='/detail-recipe/1'>Go to Recipe 1</Link>
-				<br></br>
-				<Link to='/detail-recipe/2'>Go to Recipe 2</Link>
-				<br></br>
-				<Link to='/detail-recipe/3'>Go to Recipe 3</Link>
-				<br></br>
-				<Link to='/detail-recipe/4'>Go to Recipe 4</Link>
-				<br></br>
-				<Link to='/detail-recipe/5'>Go to Recipe 5</Link>
+				<table>
+					<tbody>
+						<tr>
+							<td> 
+								<ul>
+									{
+										this.state.recipesList.map((eachRecipe, i) => 
+											(
+											<li key={i}>
+												<Link to={`/detail-recipe/${eachRecipe.id}`}> {eachRecipe.title} </Link>
+											</li>)
+										)
+									}
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		)
 	}
-  }
+}
 
 export default ShowAllRecipesPage;
