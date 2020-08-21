@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const recipeSchema = new mongoose.Schema({
-	name: {
+	title: {
 		type: String,
 		// any space in the beginning or end will be trimmed
 		trim: true, 

@@ -18,7 +18,15 @@ const getAllRecipeNames = (req, res) => {
 			res.status(200);
 			res.send(result.map((recipe) => {
 				//for now
-				return { id: recipe._id, name: recipe.name };
+				return { 
+					id: recipe._id, 
+					title: recipe.title,
+					// ingredients: recipe.ingredients,
+					// calories: recipe.calories,
+					// imgURL: recipe.imgURL,
+					// instruction: recipe.instruction,
+					// tags: recipe.tags
+				};
 			}));
 		}
 	});
@@ -41,7 +49,7 @@ const getSingleRecipeController = (req, res) => {
 
 const searchRecipeController = (req, res) => {
 	const newRecipe = new recipesModel({
-		name: req.body.name,
+		title: req.body.title,
 		ingredients: req.body.ingredients,
 		calories: req.body.calories,
 		imgURL: req.body.imgURL,
