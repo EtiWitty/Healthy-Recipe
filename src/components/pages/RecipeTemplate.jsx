@@ -17,7 +17,7 @@ class RecipeTemplate extends React.Component {
 		// 		});
 		// 	});
 	//=======================GET SINGLE RECIPE===================================================
-	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`) // this.props.id??
+	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`) // this.props.title
 		.then((res) => {
 			this.setState({ content: res.data});
 			console.log({ res });
@@ -38,7 +38,7 @@ class RecipeTemplate extends React.Component {
 
 		return (
 			<div className="recipe-template">
-				{/* if content doesnt exists( in the begining) || the object is empty */}
+				{/* if content doesn't exists( in the begining) || the object is empty */}
 				{ !this.state.content || Object.keys(this.state.content).length === 0 ? (
 					<h2>loading</h2>
 				) : (
