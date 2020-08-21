@@ -57,10 +57,7 @@ class RecipeTemplate extends React.Component {
 								<ul>
 								{ 
 									this.state.content.ingredients.map((ingredient, i) => (
-										//how so, content has ingredients property?
-										// content is "http://localhost:8000/api/getSingleRecipe/${this.props.id}" ?
 										<li key={i}>
-										{/* problem is here */}
 											{ingredient.name}: {ingredient.quantity} 
 										</li> 
 									))

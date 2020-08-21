@@ -5,7 +5,7 @@ import AboutPage from './components/pages/AboutPage';
 import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
 import DetailRecipePage  from './components/pages/DetailRecipePage';
 import MindfulChoice from './components/pages/MindfulChoice';
-import FindRecipePage from './components/pages/FindRecipePage';
+import AdminPage from './components/pages/AdminPage';
 
 const Routes = () => {
 	return (
@@ -19,7 +19,7 @@ const Routes = () => {
 							<Link to='/show-all-recipes'>All Recipes</Link>
 							<Link to='/mindful-choice'>	Mindful Choice </Link>
 							<Link to='/detail-recipe'>Recipe Detail</Link>
-							<Link to='/find-recipe'>Find Recipes</Link>
+							<Link to='/admin-page'>Admin Page</Link>
 						</div>
 				</div>
 
@@ -30,7 +30,7 @@ const Routes = () => {
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
 					<Route  path='/mindful-choice' component={MindfulChoice} /> 
-					<Route  path='/find-recipe' component={FindRecipePage} /> 
+					<Route  path='/admin-page' component={AdminPage} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>
 			</div>

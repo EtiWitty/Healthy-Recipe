@@ -6,11 +6,7 @@ const recipesModel = require('../models/recipesModel');
 // check if the program reach to this page
 console.log('hi');
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GET ALL RECEPIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const testController = (req, res) => {
-	// res.status(200);
-	res.send('Sanity check');
-}
+
 //========================== Get All Recipes ==========================================
 const getAllRecipeNames = (req, res) => {
 	Recipe.find((error, result) => {
@@ -21,6 +17,7 @@ const getAllRecipeNames = (req, res) => {
 		} else {
 			res.status(200);
 			res.send(result.map((recipe) => {
+				//for now
 				return { id: recipe._id, name: recipe.name };
 			}));
 		}
@@ -53,7 +50,7 @@ const searchRecipeController = (req, res) => {
 	});
 
 	newRecipe.save((error, result) => {
-		console.log('hi');
+		// console.log('hi');
 		if (error) {
 			res.status(500);
 			res.send(`WE CAN'T ADD A NEW RECIPE ${error}`);
@@ -63,9 +60,13 @@ const searchRecipeController = (req, res) => {
 		}
 	})
 }
+//========================== Test1 ==========================================
+const testController = (req, res) => {
+	// res.status(200);
+	res.send('Sanity check');
+}
 
-//========================== Test ==========================================
-
+//========================== Test2 ==========================================
 const test2Controller = (req, res) => {
 	let x = req.params.id;
 	res.send('salam back'+ "" + x * x);

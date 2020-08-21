@@ -9,7 +9,6 @@ const recipeSchema = new mongoose.Schema({
 		required: true,
 		maxLength: 32
 	},
-	//ingredients.detail[0] ingredients.detail[1] ??
 
 	ingredients: [{ 
 		name: {
