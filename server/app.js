@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const controllers = require('../controllers/recipesController');
+const controllers = require('../controllers/recipesControllers');
 
 dotenv.config()
  
@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 //TODO: Write an end point which get recipe with id from req.query, and return the json data
 app.get('/api/getSingleRecipe/:id', controllers.getSingleRecipeController);
 app.get('/api/getAllRecipeNames',   controllers.getAllRecipeNames);
+app.post('/api/addRecipe',    controllers.addRecipeController);
 app.post('/api/searchRecipe', controllers.searchRecipeController);
 
 //===============================Test=======================================================

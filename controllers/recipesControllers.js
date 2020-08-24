@@ -21,11 +21,11 @@ const getAllRecipeNames = (req, res) => {
 				return { 
 					id: recipe._id, 
 					title: recipe.title,
-					// ingredients: recipe.ingredients,
-					// calories: recipe.calories,
-					// imgURL: recipe.imgURL,
-					// instruction: recipe.instruction,
-					// tags: recipe.tags
+					ingredients: recipe.ingredients,
+					calories: recipe.calories,
+					imgURL: recipe.imgURL,
+					instruction: recipe.instruction,
+					tags: recipe.tags
 				};
 			}));
 		}
@@ -35,7 +35,8 @@ const getAllRecipeNames = (req, res) => {
 //========================== Get a Single Recipe ==========================================
 const getSingleRecipeController = (req, res) => {
 	Recipe.findOne({ _id: req.params.id }, (error, result) => {
-		// console.log({ error, result });
+		// console.log({ error, result }); WHERE TO CHECK THE LOG?? insomnia?
+
 		if (error) {
 			res.status(400);
 			res.send(`WE FACED AN ERROR: ${error}`);
@@ -45,9 +46,24 @@ const getSingleRecipeController = (req, res) => {
 		}
 	})
 };
+
+//========================== Get All Searched Rcipes by Title ==========================================
+const searchRecipeController = (req, res) => {
+	Recipe.find({title: req.body.title}, (error, result) => {
+		console.log({error, result});
+		if (error) {
+			res.status(400);
+			res.send(`WE CAN'T FIND YOUR SERACHED RECIPE: ${error}`);
+		} else {
+			res.status(200);
+			res.send(result);
+		}
+	})
+}
+
 //========================== Create a Single Recipe ==========================================
 
-const searchRecipeController = (req, res) => {
+const addRecipeController = (req, res) => {
 	const newRecipe = new recipesModel({
 		title: req.body.title,
 		ingredients: req.body.ingredients,
@@ -68,6 +84,8 @@ const searchRecipeController = (req, res) => {
 		}
 	})
 }
+
+
 //========================== Test1 ==========================================
 const testController = (req, res) => {
 	// res.status(200);
@@ -85,5 +103,6 @@ module.exports = {
 	getAllRecipeNames,
 	testController,
 	test2Controller,
+	addRecipeController,
 	searchRecipeController
 }
