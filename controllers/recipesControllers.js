@@ -49,7 +49,7 @@ const getSingleRecipeController = (req, res) => {
 
 //========================== Get All Searched Rcipes by Title ==========================================
 const searchRecipeController = (req, res) => {
-	Recipe.find({title: req.body.title}, (error, result) => {
+	Recipe.find({title: {$regex: req.body.title, $options: "i"}}, (error, result) => {
 		console.log({error, result});
 		if (error) {
 			res.status(400);
