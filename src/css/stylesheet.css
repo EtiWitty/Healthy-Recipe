@@ -126,7 +126,7 @@ body {
 /* ~~~~~~~~~~~~ NavBar ~~~~~~~~~~~~~ */
 /* Style The Dropdown Button */
 .dropbtn {
-	background-color: #4CAF50;
+	background-color: #7ebf4f;
 	color: white;
 	padding: 16px;
 	font-size: 16px;
@@ -204,6 +204,17 @@ table, th, td {
 	cursor: pointer;
 	padding: 10px;
 	text-align: center;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	border-radius: 10px;
+  }
+
+   /* ~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~ */
+   .footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #7ebf4f;
+		color: white;
+		text-align: center;
   }

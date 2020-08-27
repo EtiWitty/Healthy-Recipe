@@ -14,6 +14,7 @@ class DetailRecipePage extends React.Component {
 			<button className="more-recipes-btn">
 				<Link to="/show-all-recipes">More Recipes</Link>
 			</button>
+			<div className="footer">Footer</div>
 		</div>
 	  )
 	}

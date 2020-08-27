@@ -8,7 +8,8 @@ class MindfulChoice extends React.Component {
 		<div className="back-image" style={{backgroundImage: `url(${mindfulChoiceImg})`}}> 
 	  		{/* <div className="mindful-choice-page internal-page"> */}
 				<h2>Mindful Food Choice</h2>
-		Re</div>
+				<div className="footer">Footer</div>
+		</div>
 	  )
 	}
   }
