@@ -58,7 +58,7 @@ body {
 .back-image {
 	background-color: #cccccc;
 	position: absolute;
-	top: 0;
+	top: 56px;
 	bottom: 0; 
 	background-position: center; 
 	background-repeat: no-repeat; 
@@ -145,7 +145,7 @@ body {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	min-width: 145px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }

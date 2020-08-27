@@ -7,7 +7,6 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<div className="back-image" style={{backgroundImage: `url(${homeImg})`}}> 
-			{/* <svg></svg> ????*/}
 				<Search />
 			</div>
 		);
