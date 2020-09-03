@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.get('/api/getSingleRecipe/:id', controllers.getSingleRecipeController);
 app.get('/api/getAllRecipeNames',   controllers.getAllRecipeNames);
 app.post('/api/addRecipe',    controllers.addRecipeController);
-app.post('/api/searchRecipe', controllers.searchRecipeController);
+app.get('/api/searchRecipe', controllers.searchRecipeController);
 
 //===============================Test=======================================================
 app.get('/api/test', controllers.testController);

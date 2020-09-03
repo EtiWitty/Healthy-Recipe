@@ -23,9 +23,8 @@ export class Search extends React.Component {
 	onSubmit = (e) => {
 		e.preventDefault();
 		const title = this.state.title; 
-		axios.post(`http://localhost:8000/api/searchRecipe`, {
-			title
-		})
+		//TODO: PUT THE HOST ON CONST ( USE IT ACCROS THE WHOLE APP)
+		axios.get(`http://localhost:8000/api/searchRecipe?title=${title}`)
 			.then((res) => {
 				this.setState({ results: res.data });
 			})
@@ -56,7 +55,7 @@ export class Search extends React.Component {
 				</form>
 				{ this.state.results.length === 0 ? "" : (
 					<div className="search-results">
-						<h3>Results:</h3> 
+						<h3>Results</h3> 
 						<ul>
 						{ this.state.results.map((eachRecipe, i) => (
 							<li key={i}>
