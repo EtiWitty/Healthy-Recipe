@@ -8,14 +8,6 @@ class RecipeTemplate extends React.Component {
 		this.state = {
 			content: {}
 		};
-		// TODO: axios.get("backend/getRecipeData", { id: this.props.id })
-		// import(`../../mock/data${this.props.id}.json`)
-		// 	.then((jsonData) => {
-		// 		this.setState({
-		// 			...this.state,
-		// 			content: jsonData
-		// 		});
-		// 	});
 	//=======================GET SINGLE RECIPE===================================================
 	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`) // this.props.title
 		.then((res) => {
@@ -28,14 +20,6 @@ class RecipeTemplate extends React.Component {
 	}
 	
 	render () {
-		// let ingredient = JSON.stringify(data1.ingredients);
-		// let s = '';
-		// let a = [];
-		// for (let i = 0; i < data1.ingredients.length; i++) {
-		// 		s += ` ${i}`;
-		// 		a.push(ingredients[i]);
-		// }
-
 		return (
 			<div className="recipe-template">
 				{/* if content doesn't exists( in the begining) || the object is empty */}
