@@ -36,6 +36,7 @@
     "popper.js": "^1.16.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-json-pretty": "^2.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "switch": "0.0.0"
