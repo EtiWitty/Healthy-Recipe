@@ -6,7 +6,7 @@ import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
 import DetailRecipePage  from './components/pages/DetailRecipePage';
 import MindfulChoice from './components/pages/MindfulChoice';
 import AdminPage from './components/pages/AdminPage';
-import LoginButton from './components/LoginButton';
+import signInButton from './components/signInButton';
 
 const Routes = () => {
 	return (
@@ -20,7 +20,7 @@ const Routes = () => {
 							<Link to='/show-all-recipes'>All Recipes</Link>
 							<Link to='/mindful-choice'>	Mindful Choice </Link>
 							<Link to='/detail-recipe'>Recipe Detail</Link>
-							<Link to='/user-login'>User Login</Link>
+							<Link to='/user-signIn'>User SignIn</Link>
 							<Link to='/admin-page'>Admin Page</Link>
 						</div>
 				</div>
@@ -33,7 +33,7 @@ const Routes = () => {
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
 					<Route  path='/mindful-choice' component={MindfulChoice} /> 
 					<Route  path='/admin-page' component={AdminPage} /> 
-					<Route path='/user-login' component={LoginButton} /> 
+					<Route path='/user-signIn' component={signInButton} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>
 			</div>
