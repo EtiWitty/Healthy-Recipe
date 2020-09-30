@@ -58,7 +58,7 @@ body {
 .back-image {
 	background-color: #cccccc;
 	position: absolute;
-	top: 56px;
+	top: 0;
 	bottom: 0; 
 	background-position: center; 
 	background-repeat: no-repeat; 
@@ -145,7 +145,7 @@ body {
   .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
+	background-color: #7ebf4f;
 	min-width: 145px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -226,13 +226,14 @@ table, th, td {
 	/* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
-	overflow: hidden;
+  }
+
+  .topnav .top-right {
+	  float: right;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-	float: left;
-	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;

@@ -13,22 +13,7 @@ const Routes = () => {
 	return (
 		<Router>
 			<div>
-				<div className="dropdown">
-					<button className="dropbtn">Healthy Recipes</button>
-						<div className="dropdown-content">
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/show-all-recipes'>All Recipes</Link>
-							<Link to='/mindful-choice'>	Mindful Choice </Link>
-							<Link to='/detail-recipe'>Recipe Detail</Link>
-							<Link to='/admin-page'>Admin Page</Link>
-							<Link to='/user-signin'>User SignIn</Link>
-							<Link to='/user-signout'>User SignOut</Link>
-						</div>
-				</div>
-
-				{/* <Switch> looks through its children <Route>s and
-			renders the first one that matches the current URL. */}
+				{/* <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
 				<Switch>
 					<Route  path='/about' component={AboutPage} />
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
