@@ -1,6 +1,7 @@
 import React from 'react';
 import RecipeTemplate from './RecipeTemplate';
 import { Link } from 'react-router-dom';
+import Header from '../Header';
 
 class DetailRecipePage extends React.Component {
 	render() {
@@ -9,6 +10,7 @@ class DetailRecipePage extends React.Component {
 		// console.log({ gholi: this.props });
 	  return (
 	  	<div className="detail-recipe-page" >
+			<Header />
 			<RecipeTemplate id={ id } />
 			<br />
 			<button className="more-recipes-btn">

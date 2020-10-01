@@ -1,5 +1,7 @@
 
 import React from 'react';
+import SignInButton from '../components/SignInButton';
+import SignOutButton from '../components/SignOutButton';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 
@@ -26,15 +28,13 @@ class Header extends React.Component {
 							<Link to='/mindful-choice'>	Mindful Choice </Link>
 							<Link to='/detail-recipe'>Recipe Detail</Link>
 							<Link to='/admin-page'>Admin Page</Link>
-							<Link to='/user-signin'>User SignIn</Link>
-							<Link to='/user-signout'>User SignOut</Link>
 						</div>
 				</div>
               <Link to="#news">News</Link>
               <Link className="top-right" to="search">Search</Link>
-              {/* this will togglebtw with signin and signout */}
-              <Link className="top-right" to="#signin">SignIn</Link> 
-              <Link className="top-right" to="#signup">SignUp</Link>
+              {/* this will toggle btw with signin and signout */}
+              <Link className="top-right" to="#signin">  <SignInButton /> </Link> 
+              <Link className="top-right" to="#signout"> <SignOutButton /> </Link>
               <Link to="javascript:void(0);" className="icon" onclick="myFunction()">
                   <i className="fa fa-bars"></i>
              </Link>

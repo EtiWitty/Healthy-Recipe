@@ -20,8 +20,6 @@ const Routes = () => {
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
 					<Route  path='/mindful-choice' component={MindfulChoice} /> 
 					<Route  path='/admin-page' component={AdminPage} /> 
-					<Route path='/user-signin' component={SignInButton} /> 
-					<Route path='/user-signout' component={SignOutButton} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>
 			</div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutImg from '../../img/aboutImg.jpg';
+import Header from '../Header';
 
 class AboutPage extends React.Component {
 	
@@ -7,7 +8,7 @@ class AboutPage extends React.Component {
 	  return (
 		  // <div className="about-page internal-page" >
 		<div className="back-image" style={{backgroundImage: `url(${aboutImg})`}}> 
-			<h4>About the Healthy Recipe App</h4>
+				<Header />
 				<p className="internal-page">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
