@@ -6,7 +6,6 @@ import axios from 'axios';
 
 class ShowAllRecipesPage extends React.Component {
 	constructor(props) {
-		super(props);
 		this.state = {
 			recipesList: []
 		};

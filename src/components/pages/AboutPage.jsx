@@ -6,7 +6,6 @@ class AboutPage extends React.Component {
 	
 	render() {
 	  return (
-		  // <div className="about-page internal-page" >
 		<div className="back-image" style={{backgroundImage: `url(${aboutImg})`}}> 
 				<Header />
 				<p className="internal-page">
