@@ -30,6 +30,10 @@ app.get('/api/getAllRecipeNames',   controllers.getAllRecipeNames);
 app.post('/api/addRecipe',    controllers.addRecipeController);
 app.get('/api/searchRecipe', controllers.searchRecipeController);
 
+//===============================GET Request - Yummly API================================================
+// app.get('/api/getFeedUseYummlyApi', controllers.getFeedUseYummlyApi);//??
+
+
 //===============================Test=======================================================
 app.get('/api/test', controllers.testController);
 // app.get('/hi', function (req, res) {
