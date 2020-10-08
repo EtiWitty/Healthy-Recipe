@@ -36,7 +36,7 @@ class Header extends React.Component {
               {/* this will toggle btw with signin and signout */}
               <Link className="top-right" to="#signin">  <SignInButton /> </Link> 
               <Link className="top-right" to="#signout"> <SignOutButton /> </Link>
-              <Link to="javascript:void(0);" className="icon" onclick="myFunction()">
+              <Link to="javascript:void(0);" className="icon">
                   <i className="fa fa-bars"></i>
              </Link>
         </div>
