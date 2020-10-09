@@ -3,19 +3,19 @@ import React from 'react';
 import SignInButton from '../components/SignInButton';
 import SignOutButton from '../components/SignOutButton';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-
+import axios from 'axios';
 
 class Header extends React.Component {
 
 	render() {
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += "responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
+        // function myFunction() {
+        //     var x = document.getElementById("myTopnav");
+        //     if (x.className === "topnav") {
+        //       x.className += "responsive";
+        //     } else {
+        //       x.className = "topnav";
+        //     }
+        //   }
         
 	  return (
 		<div className="topnav" id="myTopnav">
