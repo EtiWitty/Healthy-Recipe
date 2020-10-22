@@ -1,13 +1,11 @@
 import React from 'react';
 import aboutImg from '../../img/aboutImg.jpg';
-import Header from '../Header';
 
 class AboutPage extends React.Component {
 	
 	render() {
 	  return (
 		<div className="back-image" style={{backgroundImage: `url(${aboutImg})`}}> 
-				<Header />
 				<p className="internal-page">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

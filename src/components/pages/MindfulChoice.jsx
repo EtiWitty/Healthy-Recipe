@@ -1,6 +1,5 @@
 import React from 'react';
 import mindfulChoiceImg from '../../img/mindfulChoiceImg.jpg';
-import Header from '../Header';
 import axios from 'axios';
 
 class MindfulChoice extends React.Component {
@@ -43,12 +42,11 @@ class MindfulChoice extends React.Component {
 	render() {
 	  return (
 		<div className="back-image" style={{backgroundImage: `url(${mindfulChoiceImg})`}}> 
-			<Header />
-				<h2>Mindful Food Choice</h2>
-				{/* <pre>{ JSON.stringify(this.state.result) }</pre> */}
-				{/* <p>{this.state.result.reviews.map((res) => <div>{JSON.stringify(res)}</div>)}</p> */}
-				<p>{this.state.result.reviewImages.map((reviewImg) => <img src={reviewImg.resizableImageUrl} />)}</p>
-				<div className="footer">Footer</div>
+			<h2>Mindful Food Choice</h2>
+			{/* <pre>{ JSON.stringify(this.state.result) }</pre> */}
+			{/* <p>{this.state.result.reviews.map((res) => <div>{JSON.stringify(res)}</div>)}</p> */}
+			<p>{this.state.result.reviewImages.map((reviewImg) => <img src={reviewImg.resizableImageUrl} />)}</p>
+			<div className="footer">Footer</div>
 		</div>
 	  )
 	}

@@ -7,17 +7,17 @@ import DetailRecipePage  from './components/pages/DetailRecipePage';
 import MindfulChoice from './components/pages/MindfulChoice';
 import AdminPage from './components/pages/AdminPage';
 import UserInfo from './components/pages/UserInfo';
-// import Header from './components/Header';
+import Header from './components/Header';
 
 
 const Routes = () => {
 	return (
 		<Router>
 			<div>
-				{/* <Header /> */}
+				<Header />
 				{/* <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
 				<Switch>
-					<Route  path='/about' component={AboutPage} />
+					<Route path='/about' component={AboutPage}/>
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
 					<Route  path='/mindful-choice' component={MindfulChoice} /> 

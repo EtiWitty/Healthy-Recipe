@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import allRecipes from '../../img/allRecipes.jpg';
-import Header from '../Header';
 import axios from 'axios';
 
 class ShowAllRecipesPage extends React.Component {
@@ -28,7 +27,6 @@ componentDidMount() {
 		return (
 			// <div className='recipe-detail internal-page'>
 			<div className="back-image" style={{backgroundImage: `url(${allRecipes})`}}> 
-				<Header />
 				<table>
 					<tbody>
 						<tr>
