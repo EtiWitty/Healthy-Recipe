@@ -31,7 +31,6 @@ class Header extends React.Component {
               <Link to='/user-info'>User Info</Link>
 						</div>
 				</div>
-              <Link to="#news">News</Link>
               <Link className="top-right" to="search">Search</Link>
               {/* this will toggle btw with signin and signout */}
               <Link className="top-right" to="#signin">  <SignInButton /> </Link> 
