@@ -45,7 +45,6 @@ componentDidMount() {
 						</tr>
 					</tbody>
 				</table>
-				<div className="footer">Footer</div>
 			</div>
 		)
 	}

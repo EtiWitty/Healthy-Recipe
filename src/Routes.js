@@ -8,6 +8,7 @@ import MindfulChoice from './components/pages/MindfulChoice';
 import AdminPage from './components/pages/AdminPage';
 import UserInfo from './components/pages/UserInfo';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 const Routes = () => {
@@ -25,6 +26,7 @@ const Routes = () => {
 					<Route  path='/user-info' component={UserInfo} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>
+				<Footer />
 			</div>
 		</Router>
 	);

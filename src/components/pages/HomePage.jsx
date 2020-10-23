@@ -8,7 +8,6 @@ class HomePage extends React.Component {
 		return (
 			<div className="back-image" style={{backgroundImage: `url(${homeImg})`}}> 
 				<Search />
-                <div className="footer">Footer</div>
 			</div>
 		);
 	}

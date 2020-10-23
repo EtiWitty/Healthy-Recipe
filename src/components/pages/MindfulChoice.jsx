@@ -46,7 +46,6 @@ class MindfulChoice extends React.Component {
 			{/* <pre>{ JSON.stringify(this.state.result) }</pre> */}
 			{/* <p>{this.state.result.reviews.map((res) => <div>{JSON.stringify(res)}</div>)}</p> */}
 			<p>{this.state.result.reviewImages.map((reviewImg) => <img src={reviewImg.resizableImageUrl} />)}</p>
-			<div className="footer">Footer</div>
 		</div>
 	  )
 	}
