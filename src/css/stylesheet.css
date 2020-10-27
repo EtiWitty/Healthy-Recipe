@@ -3,6 +3,12 @@ body {
         font-family: 'Roboto', 'Verdana', 'Tangerine', serif;
         font-size: 16px;
 }
+
+.mainContainer {
+	margin-top: 80px;
+	padding-left: 20px;
+}
+
 /* ~~~~~~~~~~~~~Static Pages - Recipe1-2-3-4-5~~~~~~~~~~~~~ */
 .router-links li {
 	display: inline;
@@ -50,9 +56,9 @@ body {
 
 /* ~~~~~~~~~~~~~FindRecipe Page~~~~~~~~~~~~~ */
 
-.find-recipe-page {
+/* .find-recipe-page {
 	border:5px solid rgb(0, 217, 255);
-}
+} */
 
 /* ~~~~~~~~~~~~~HomePage~~~~~~~~~~~~~ */
 .back-image {

@@ -14,18 +14,20 @@ import Footer from './components/Footer';
 const Routes = () => {
 	return (
 		<Router>
-			<div>
+			<div className="appBody">
 				<Header />
 				{/* <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
-				<Switch>
-					<Route path='/about' component={AboutPage}/>
-					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
-					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
-					<Route  path='/mindful-choice' component={MindfulChoice} /> 
-					<Route  path='/admin-dashboard' component={AdminDashboard} /> 
-					<Route  path='/user-dashboard' component={UserDashboard} /> 
-					<Route  path='/' component={HomePage} /> 
-				</Switch>
+				<div className="mainContainer">
+					<Switch>
+						<Route path='/about' component={AboutPage}/>
+						<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
+						<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
+						<Route  path='/mindful-choice' component={MindfulChoice} /> 
+						<Route  path='/admin-dashboard' component={AdminDashboard} /> 
+						<Route  path='/user-dashboard' component={UserDashboard} /> 
+						<Route  path='/' component={HomePage} /> 
+					</Switch>
+				</div>
 				<Footer />
 			</div>
 		</Router>
