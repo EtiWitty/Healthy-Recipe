@@ -1,7 +1,7 @@
 import React from 'react';
 import UserProfile from '../UserProfile';
 
-class UserInfo extends React.Component {
+class UserDashboard extends React.Component {
 	
 	render() {
 	  	return(
@@ -12,4 +12,4 @@ class UserInfo extends React.Component {
 	}
 }
 
-export default UserInfo;
+export default UserDashboard;

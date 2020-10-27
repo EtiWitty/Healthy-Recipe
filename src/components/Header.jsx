@@ -27,8 +27,8 @@ class Header extends React.Component {
                 <Link to='/show-all-recipes'>All Recipes</Link>
                 <Link to='/mindful-choice'>	Mindful Choice </Link>
                 <Link to='/detail-recipe'>Recipe Detail</Link>
-                <Link to='/admin-page'>Admin Page</Link>
-                <Link to='/user-info'>User Info</Link>
+                <Link to='/admin-dashboard'>Admin Dashboard</Link>
+                <Link to='/user-dashboard'>User Dashboard</Link>
               </div>
           </div>
                 <Link className="top-right" to="search">Search</Link>

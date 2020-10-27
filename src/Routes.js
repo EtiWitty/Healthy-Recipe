@@ -5,8 +5,8 @@ import AboutPage from './components/pages/AboutPage';
 import ShowAllRecipesPage from './components/pages/ShowAllRecipesPage';
 import DetailRecipePage  from './components/pages/DetailRecipePage';
 import MindfulChoice from './components/pages/MindfulChoice';
-import AdminPage from './components/pages/AdminPage';
-import UserInfo from './components/pages/UserInfo';
+import AdminDashboard from './components/pages/AdminDashboard';
+import UserDashboard from './components/pages/UserDashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -22,8 +22,8 @@ const Routes = () => {
 					<Route  path='/show-all-recipes' component={ShowAllRecipesPage} /> 
 					<Route  path='/detail-recipe/:id' component={DetailRecipePage} /> 
 					<Route  path='/mindful-choice' component={MindfulChoice} /> 
-					<Route  path='/admin-page' component={AdminPage} /> 
-					<Route  path='/user-info' component={UserInfo} /> 
+					<Route  path='/admin-dashboard' component={AdminDashboard} /> 
+					<Route  path='/user-dashboard' component={UserDashboard} /> 
 					<Route  path='/' component={HomePage} /> 
 				</Switch>
 				<Footer />
