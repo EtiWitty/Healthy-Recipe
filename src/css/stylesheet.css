@@ -57,7 +57,7 @@ body {
 /* ~~~~~~~~~~~~~HomePage~~~~~~~~~~~~~ */
 .back-image {
 	background-color: #cccccc;
-	/* position: absolute; */
+	position: absolute;
 	top: 0;
 	bottom: 0; 
 	background-position: center; 
@@ -226,6 +226,10 @@ table, th, td {
 	/* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
   }
 
   .topnav .top-right {
