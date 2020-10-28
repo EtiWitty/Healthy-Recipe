@@ -290,3 +290,50 @@ table, th, td {
 	  text-align: left;
 	}
   }
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~Admin Dashboard~~~~~~~~~~~~~~~~~~~~~~ */
+  .add-recipe input, .add-recipe button {
+	margin: 20px 20px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border-radius: 10px;
+  }
+
+  .recipe-title {
+	display: block;
+	margin: 50px 10px 20px 10px;
+	width: 30%;
+  }
+
+  .recipe-ingredients {
+	  width: 20%;
+  }
+
+  .recipe-quantity {
+	width: 20%;
+  }
+
+  .add-btn {
+	padding: 5px;
+	text-align: center;
+  }
+
+  .recipe-calories {
+	width: 20%;
+  }
+
+  .recipe-image {
+	display: block;
+	width: 20%;
+  }
+
+  .recipe-instruction {
+	display: block;  
+	width: 50%;
+  }
+
+  .recipe-tag {
+	display: block;
+	margin: 100px 10px;
+	width: 20%;
+  }
