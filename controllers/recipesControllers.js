@@ -77,7 +77,7 @@ const addRecipeController = (req, res) => {
 	});
 
 	newRecipe.save((error, result) => {
-		// console.log('hi');
+		console.log({ error, result });
 		if (error) {
 			res.status(500);
 			res.send(`WE CAN'T ADD A NEW RECIPE ${error}`);

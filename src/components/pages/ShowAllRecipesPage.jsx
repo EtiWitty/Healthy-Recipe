@@ -13,7 +13,7 @@ class ShowAllRecipesPage extends React.Component {
 	
 //=============================Get All Recipes==================================
 componentDidMount() {
-	axios.get('http://localhost:8000/api/getAllRecipeNames')
+	axios.get('http://localhost:3000/api/getAllRecipeNames')
 		.then((res) => {
 			this.setState({recipesList: res.data});
 			console.log({ res });

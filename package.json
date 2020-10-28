@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "react-scripts start",
+    "client": "PORT=8000 react-scripts start",
     "client-build": "react-scripts build",
     "start": "nodemon server/app.js"
   },

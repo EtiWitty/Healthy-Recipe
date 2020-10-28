@@ -1,17 +1,42 @@
 import React from 'react';
 
 class AdminDashboard extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			title: "",
+			calories: 0,
+		};
+
+		this.handleTitleChange = this.handleTitleChange.bind(this);
+		this.handleCaloriesChange = this.handleCaloriesChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
+	handleTitleChange(event) {
+		this.setState({title: event.target.value});
+	}
+
+	handleCaloriesChange(event) {
+		this.setState({calories: event.target.value});
+	}
+
+	handleSubmit(event) {
+		alert(`Title is: ${this.state.title} and calories is ${this.state.calories}`);
+		event.preventDefault();
+	  }
 	
 	render() {
 	  	return(
-			<div className="add-recipe">
+			<form className="add-recipe" onSubmit={this.handleSubmit}>
 				<h2> Welcome to the Admin Dashboard </h2>
 				<input className="recipe-title"
 						type="text"  
-						placeholder="What is the title?" 
+						placeholder="What is the title?"
+						onChange={this.handleTitleChange}
 				/>
 
-				<input className="recipe-ingredients"
+				{/* <input className="recipe-ingredients"
 						type="text"  
 						placeholder="Add your ingredients" 
 				/>
@@ -21,13 +46,14 @@ class AdminDashboard extends React.Component {
 				<input className="recipe-quantity"
 						type="text"  
 						placeholder="How much / How many?" 
-				/>
+				/> */}
 
 				<input className="recipe-calories"
 						type="text"  
 						placeholder="Calories" 
+						onChange={this.handleCaloriesChange}
 				/>
-
+{/* 
 				<button className="add-btn">Add more</button>
 
 				<input className="recipe-image"
@@ -43,11 +69,11 @@ class AdminDashboard extends React.Component {
 				<input className="recipe-tag"
 						type="text"  
 						placeholder="Tag the recipe" 
-				/>
+				/> */}
 
-				<button className="submit-btn">Submit your recipe!</button>
+				<input type="submit" className="submit-btn" value="Submit New Recipe" />
 
-			</div>
+			</form>
 		)
 	}
 }

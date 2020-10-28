@@ -9,7 +9,7 @@ class RecipeTemplate extends React.Component {
 			content: {}
 		};
 	//=======================GET SINGLE RECIPE===================================================
-	axios.get(`http://localhost:8000/api/getSingleRecipe/${this.props.id}`) // this.props.title
+	axios.get(`http://localhost:3000/api/getSingleRecipe/${this.props.id}`) // this.props.title
 		.then((res) => {
 			this.setState({ content: res.data});
 			console.log({ res });

@@ -24,7 +24,7 @@ export class Search extends React.Component {
 		e.preventDefault();
 		const title = this.state.title; 
 		//TODO: PUT THE HOST ON CONST ( USE IT ACCROS THE WHOLE APP)
-		axios.get(`http://localhost:8000/api/searchRecipe?title=${title}`)
+		axios.get(`http://localhost:3000/api/searchRecipe?title=${title}`)
 			.then((res) => {
 				this.setState({ results: res.data });
 			})
