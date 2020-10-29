@@ -25,7 +25,6 @@ componentDidMount() {
 
 	render() {
 		return (
-			// <div className='recipe-detail internal-page'>
 			<div className="back-image" style={{backgroundImage: `url(${allRecipes})`}}> 
 				<table>
 					<tbody>
@@ -34,8 +33,7 @@ componentDidMount() {
 								<ul>
 									{
 										this.state.recipesList.map((eachRecipe, i) => 
-											(
-											<li key={i}>
+											(<li className="single-recipe" key={i}>
 												<Link to={`/detail-recipe/${eachRecipe.id}`}> {eachRecipe.title} </Link>
 											</li>)
 										)

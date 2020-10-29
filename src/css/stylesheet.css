@@ -181,7 +181,8 @@ body {
 /* ~~~~~~~~~~~~~Tags~~~~~~~~~~~~~ */
 
 a {
-	text-decoration: none;
+	text-decoration: bold;
+	color: rgb(67, 106, 8);
 }
 
 
@@ -292,7 +293,7 @@ table, th, td {
   }
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~Admin Dashboard~~~~~~~~~~~~~~~~~~~~~~ */
-  .add-recipe input, .add-recipe button {
+  .add-recipe input, .add-recipe button, .add-recipe textarea {
 	margin: 20px 20px;
 	padding: 10px 15px;
 	box-sizing: border-box;
@@ -330,10 +331,15 @@ table, th, td {
   .recipe-instruction {
 	display: block;  
 	width: 50%;
+	height: 300px;
   }
 
   .recipe-tag {
 	display: block;
 	margin: 100px 10px;
 	width: 20%;
+  }
+
+  .single-recipe {
+	  margin:20px;
   }
