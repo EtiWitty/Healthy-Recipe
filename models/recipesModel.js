@@ -10,18 +10,31 @@ const recipeSchema = new mongoose.Schema({
 		maxLength: 32
 	},
 
-	ingredients: [{ 
-		name: {
-			type: String,
-			trim: true, 
-			required: true,
-		},
-		quantity: {
-			type: Number, 
-			trim: true, 
-			required: true,
-		}
-	}],
+	// ingredients: [{ 
+	// 	name: {
+	// 		type: String,
+	// 		trim: true, 
+	// 		required: true,
+	// 	},
+	// 	quantity: {
+	// 		type: Number, 
+	// 		trim: true, 
+	// 		required: true,
+	// 	}
+	// }],
+
+	ingredients: { 
+		type: String,
+		trim: true, 
+		required: true,
+	},
+
+	quantity: {
+		type: Number, 
+		trim: true, 
+		required: true,
+	},
+	
 	calories: {
 		type: Number,
 		required: true,

@@ -6,9 +6,12 @@ class AdminDashboard extends React.Component {
 		super(props);
 		this.state = {
 			title: "",
+			ingredients:"",
+			quantity:"",
 			calories: 0,
 			imgURL:"",
-			instruction:""
+			instruction:"",
+			tags:[]
 		};
 
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -46,9 +49,11 @@ class AdminDashboard extends React.Component {
 						onChange={this.handleInputChange}
 				/>
 
-				{/* <input className="recipe-ingredients"
+				<input className="recipe-ingredients"
 						type="text"  
 						placeholder="Add your ingredients" 
+						name="ingredients"
+						onChange={this.handleInputChange}
 				/>
 
 				<br />
@@ -56,7 +61,9 @@ class AdminDashboard extends React.Component {
 				<input className="recipe-quantity"
 						type="text"  
 						placeholder="How much / How many?" 
-				/> */}
+						name="quantity"
+						onChange={this.handleInputChange}
+				/>
 
 				<input className="recipe-calories"
 					   type="text"  
@@ -81,10 +88,12 @@ class AdminDashboard extends React.Component {
 						  onChange={this.handleInputChange}
 				/>
 
-				{/* <input className="recipe-tag"
+				<input className="recipe-tag"
 						type="text"  
 						placeholder="Tag the recipe" 
-				/>  */}
+						name="tags"
+						onChange={this.handleInputChange}
+				/> 
 
 				<input type="submit" 
 					   className="submit-btn" 

@@ -22,6 +22,7 @@ const getAllRecipeNames = (req, res) => {
 					id: recipe._id, 
 					title: recipe.title,
 					ingredients: recipe.ingredients,
+					quantity: recipe.quantity,
 					calories: recipe.calories,
 					imgURL: recipe.imgURL,
 					instruction: recipe.instruction,
@@ -70,6 +71,7 @@ const addRecipeController = (req, res) => {
 	const newRecipe = new recipesModel({
 		title: req.body.title,
 		ingredients: req.body.ingredients,
+		quantity: req.body.quantity,
 		calories: req.body.calories,
 		imgURL: req.body.imgURL,
 		instruction: req.body.instruction,
