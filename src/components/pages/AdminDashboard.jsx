@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+// import config from '../../config';
 
 class AdminDashboard extends React.Component {
 	constructor(props) {

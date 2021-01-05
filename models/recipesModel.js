@@ -23,11 +23,11 @@ const recipeSchema = new mongoose.Schema({
 	// 	}
 	// }],
 
-	ingredients: { 
+	ingredients: [{ 
 		type: String,
 		trim: true, 
 		required: true,
-	},
+	}],
 
 	quantity: {
 		type: Number, 

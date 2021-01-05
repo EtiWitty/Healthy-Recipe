@@ -39,14 +39,29 @@ class RecipeTemplate extends React.Component {
 								<img className="recipe-img" src={ this.state.content.imgURL } />
 								<h6>Ingredients</h6>
 								<ul>
-								{ 
+								{/* { this.state.content.ingredients }
 									this.state.content.ingredients.map((ingredient, i) => (
 										<li key={i}>
 											{ingredient.name}: {ingredient.quantity} 
 										</li> 
 									))
-								} 
+								}  */}
+
+									{ this.state.content.ingredients.map((ingredient, i) => (
+											<li key={i}>
+												{ingredient.name}
+											</li> 
+										))
+									}
+								
 								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td> 
+								<h6>Quantity</h6> 
+								<p>{ this.state.content.quantity }</p>
 							</td>
 						</tr>
 
